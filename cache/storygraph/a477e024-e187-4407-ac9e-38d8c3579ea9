@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html class="system">
+  <head>
+      <script defer data-domain="app.thestorygraph.com" src="https://jolly-sunset-7d5a.thestorygraph.workers.dev/js/script.js"></script>
+
+    <title>Кадавры by Алексей Поляринов | The StoryGraph</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="H6XyF2I_YMdXmeeaAQ78OFO_BRdPcAYmqpF7iHNnA9b3pyzKsIfilsBhDP0aeZ8lL44SPUM3irtPp7Vo7KmCbg" />
+    
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+      <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:site" content="@thestorygraph" />
+  <meta property="og:title" content="Кадавры by Алексей Поляринов" />
+  <meta property="og:url" content="/books/a477e024-e187-4407-ac9e-38d8c3579ea9" />
+    <meta property="og:description" content="События нового романа Алексея Поляринова разворачиваются в мире, где тридцать лет назад произошла..." />
+    <meta property="og:image" content="https://cdn.thestorygraph.com/0ijkvxxicj1c7f39k5vz2wost18v" />
+    <meta property="og:image:alt" content="Book cover for Кадавры by Алексей Поляринов" />
+
+    <link rel="stylesheet" href="https://assets.thestorygraph.com/assets/tailwind-610a1f8fe4ca8a4786a3ad2bc6a3e65deea18d720c65a7a9cf0d4093ae350207.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://assets.thestorygraph.com/assets/application-18a19cae75547efb4f4baee5d94e658347e8f7b08bb7e13ac197b7c7d009fe2e.css" data-turbo-track="reload" />
+    <link rel="stylesheet" href="https://assets.thestorygraph.com/assets/actiontext-2a6baa5141a4493e99fbf37b0e981eb5329c2520300afac1d93f2d2aedc2cd8b.css" media="all" />
+    <link rel="stylesheet" href="https://assets.thestorygraph.com/assets/flatpickr-b0b364151b096aac0f171a2ac0b6f4b5acf1eed387c6e3cfd12a44d3d1289f8d.css" media="all" />
+    <link rel="stylesheet" href="https://assets.thestorygraph.com/assets/flexmasonry-0c3cf8c70342391780674f40236c8333632887c08e9bfb5293fad8ce8d4a0374.css" media="all" />
+
+    <link rel="icon" type="image/x-icon" href="https://assets.thestorygraph.com/assets/favicon-33f8684a82c2daf347f6a7f1666ee95e3051f78650eb5a9c175734396cb22c0d.ico" />
+    <script src="https://assets.thestorygraph.com/assets/application-eb709d756c8e39f7895a55e52a03ca7f01865c33682e95e7605ca753845dae05.js"></script>
+    <script src="https://assets.thestorygraph.com/packs/js/application-7b2c7d0fc45c5ca29011.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <script data-turbo-cache="false">
+      if (navigator.userAgent.includes("Turbo Native")) {
+        var userThemeSetting = document.getElementById('cu_theme').value
+        if (navigator.userAgent.includes("Android")) {
+          Android.setUserThemeSetting(userThemeSetting);
+        } else {
+          window.webkit.messageHandlers.nativeAppViewController.postMessage({ type: 'themeSetting', user_id: userThemeSetting })
+        }
+      }
+
+      if (document.querySelector("html").classList.contains('system')) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          $("html").addClass("dark");
+        } else {
+          $("html").removeClass("dark");
+        }
+      }
+    </script>
+  </head>
+
+  <body class="antialiased font-body text-darkestGrey dark:text-grey"  >
+    <div class="min-h-screen bg-white dark:bg-darkestGrey">
+      <nav id="navbar" aria-label="Main" class="sticky z-1000 top-0 bg-white dark:bg-darkestGrey shadow dark:shadow-md ">
+          <div class="max-w-full mx-auto sm:px-6 lg:px-8">
+            <div class="flex justify-between h-8">
+              <div class="flex px-2 md:px-0">
+                <div class="ml-2 flex-shrink-0 flex items-center">
+                  <div id="logo-navbar">
+                    <div class="dark:hidden">
+                      <a href="https://thestorygraph.com">
+                        <img alt="The StoryGraph logo" class="block h-6 w-6" src="https://assets.thestorygraph.com/assets/logo-no-text-96bf332d15d42cc9b92cbb17d6f2392b515edadf11a5fd02710b61d535d34b4a.png" />
+</a>                    </div>
+                    <div class="hidden dark:block">
+                      <a href="https://thestorygraph.com">
+                        <img alt="The StoryGraph logo" class="block h-[40px] w-[40px]" src="https://assets.thestorygraph.com/assets/logo-no-text-dark-mode-c6312775a773a77605dd659850b4c0cd08db5c2044ef53a4f7b5186f8ca05f1f.png" />
+</a>                    </div>
+                  </div>
+                  <div id="pwa-back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="button" class="block w-6 icon-cheveron-left-circle">
+                      <title>Go back</title>
+                      <circle cx="12" cy="12" r="10" class="fill-current text-white dark:text-darkestGrey"/><path class="fill-current text-darkestGrey dark:text-grey" d="M13.7 15.3a1 1 0 0 1-1.4 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.4 1.4L10.42 12l3.3 3.3z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="hidden ml-0 xl:ml-6 md:flex space-x-4 xl:space-x-8">
+                  <a class="hidden xl:inline-flex items-center px-1 pt-1 border-b-4 text-xs lg:text-sm font-body border-transparent text-darkestGrey dark:text-grey hover:border-cyan-700 dark:hover:border-cyan-500" href="/">Home</a>
+                    <a class="inline-flex items-center px-1 pt-1 border-b-4 text-xs xl:text-sm font-body border-transparent text-darkestGrey dark:text-grey hover:border-cyan-700 dark:hover:body-cyan-500" href="/reading_challenges">Reading Challenges</a>
+                  <a class="inline-flex items-center px-1 pt-1 border-b-4 text-xs xl:text-sm font-body border-transparent text-darkestGrey dark:text-grey hover:border-cyan-700 dark:hover:border-cyan-500" href="/news-feed">Community</a>
+                  <a class="inline-flex items-center px-1 pt-1 border-b-4 text-xs xl:text-sm font-body border-transparent text-darkestGrey dark:text-grey hover:border-cyan-700 dark:hover:border-cyan-500" href="/giveaways">Giveaways</a>
+                    <a class="inline-flex items-center px-1 pt-1 border-b-4 text-xs xl:text-sm font-body border-transparent text-darkestGrey dark:text-grey hover:border-cyan-700 dark:hover:border-cyan-500" href="/users/sign_in">Sign in</a>
+                </div>
+              </div>
+              <div class="flex-1 flex items-center justify-center px-2 md:px-0 xl:ml-6 xl:justify-end">
+                <div class="max-w-xl w-full xl:max-w-xs">
+                  <label for="search" class="sr-only">Search</label>
+                  <div id="search-all-books" class="relative items-center" data-controller="combobox">
+                    <form class="peer" data-turbo-frame="search_results" data-controller="form" data-action="invalid-&gt;form#hideValidationMessage:capture input-&gt;form#submit" action="/search?turbo_frame=search_results" accept-charset="UTF-8" method="get">
+                      <div class="absolute inset-y-0 right-1 pl-3 flex items-center cursor-pointer">
+                        <button name="button" type="submit" id="search-button" data-form-target="submit">
+                          <svg class="h-5 w-5 text-cyan-600 dark:text-cyan-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="button" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                          </svg>
+</button>                      </div>
+                      <div class="clear-input hidden absolute inset-y-0 right-6 sm:right-7 pl-3 flex items-center cursor-pointer" data-form-target="clear">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-600 dark:text-cyan-400" viewBox="0 0 20 20" role="button" fill="currentColor">
+                          <title>Clear search input</title>
+                          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <input type="search" name="search_term" id="search" pattern="^(?! *$).+" required="required" autocomplete="off" placeholder="Search all books..." class="search-field block w-full md:ml-5 pl-3 pr-6 sm:pr-7 py-2 border-2 border-darkGrey dark:border-darkerGrey rounded-md leading-5 bg-white dark:bg-darkestGrey placeholder-darkerGrey focus:outline-none focus:placeholder-darkerGrey focus:ring-1 focus:ring-cyan-600 dark:focus:ring-cyan-400 focus:border-cyan-600 dark:focus:border-cyan-400 text-sm md:text-xs lg:text-sm font-body" data-combobox-target="input" data-action="focus-&gt;combobox#start focusout-&gt;combobox#stop" />
+                      <turbo-frame id="search_results" target="_top" class="empty:hidden peer-invalid:hidden" data-combobox-target="list">
+                      </turbo-frame>
+</form>                  </div>
+                </div>
+              </div>
+              <div class="flex items-center px-2 md:hidden">
+                <!-- Mobile menu button -->
+                <button id="toggle-mobile-menu" class="inline-flex items-center justify-center p-2 rounded-md text-darkestGrey dark:text-grey hover:text-cyan-700 dark:hover:text-cyan-500 focus:outline-none" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <!-- Icon when menu is closed. -->
+                  <!--
+                    Heroicon name: menu
+
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                  <div class="relative">
+                    <svg id="open-mobile-menu" class="block h-6 w-6 text-darkestGrey dark:text-grey hover:text-cyan-700 dark:hover:text-cyan-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" role="button" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </div>
+                  <!-- Icon when menu is open. -->
+                  <!--
+                    Heroicon name: x
+
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                  <svg id="close-mobile-menu" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" role="button" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden md:ml-4 md:flex md:items-center">
+                <!-- Profile dropdown -->
+              </div>
+            </div>
+          </div>
+
+          <!--
+            Mobile menu, toggle classes based on menu state.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <div id="mobile-menu" class="hidden md:hidden">
+            <div class="pt-2 pb-3 space-y-1">
+              <a class="mobile-menu-item  block pl-3 pr-4 py-2 border-l-4 text-body font-body border-transparent text-darkestGrey dark:text-grey hover:bg-cyan-600 dark:hover:bg-cyan-400 hover:border-cyan-700 dark:hover:border-cyan-500 hover:text-white dark:hover:text-darkestGrey" href="/">Home</a>
+                <a class="mobile-menu-item block pl-3 pr-4 py-2 border-l-4 text-body font-body border-transparent text-darkestGrey dark:text-grey hover:bg-cyan-600 dark:hover:bg-cyan-400 hover:border-cyan-700 dark:hover:border-cyan-500 hover:text-white dark:hover:text-darkestGrey" href="/reading_challenges">Reading Challenges</a>
+              <a class="mobile-menu-item  block pl-3 pr-4 py-2 border-l-4 text-body font-body border-transparent text-darkestGrey dark:text-grey hover:bg-cyan-600 dark:hover:bg-cyan-400 hover:border-cyan-700 dark:hover:border-cyan-500 hover:text-white dark:hover:text-darkestGrey" href="/news-feed">Community</a>
+              <a class="mobile-menu-item block pl-3 pr-4 py-2 border-l-4 text-body font-body border-transparent text-darkestGrey dark:text-grey hover:bg-cyan-600 dark:hover:bg-cyan-400 hover:border-cyan-700 dark:hover:border-cyan-500 hover:text-white dark:hover:text-darkestGrey" href="/giveaways">Giveaways</a>
+                <a class="mobile-menu-item block pl-3 pr-4 py-2 border-l-4 text-body font-body border-transparent text-darkestGrey dark:text-grey hover:bg-cyan-600 dark:hover:bg-cyan-400 hover:border-cyan-700 dark:hover:border-cayn-500 hover:text-white dark:hover:text-darkestGrey" href="/users/sign_in">Sign in</a>
+              <div class="block md:hidden">
+                <a class="mobile-menu-item block pl-3 pr-4 py-2 border-l-4 text-body font-body border-transparent text-darkestGrey dark:text-grey hover:bg-cyan-600 dark:hover:bg-cyan-400 hover:border-cyan-700 dark:hover:border-cyan-500 hover:text-white dark:hover:text-darkestGrey" href="/contact-us">Contact us</a>
+              </div>
+            </div>
+          </div>
+      </nav>
+
+
+      <div class="py-4 sm:py-3">
+        <main>
+          <div class="max-w-8xl mx-auto px-5 sm:px-6 lg:px-8">
+
+            <div id="barcode-scanner-modal" class="hidden fixed mt-7 z-[999] bg-white dark:bg-darkestGrey bg-opacity-95 dark:bg-opacity-95 bg-gradient-to-r dark:bg-none from-white to-cyan-50 to-[250%] inset-0 overflow-hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+              <div class="flex items-center justify-center px-4 py-8">
+                <span class="hidden sm:inline-block sm:align-middle" aria-hidden="true">&#8203;</span>
+                <div class="overflow-hidden transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" data-controller="barcode-scanner">
+                  <div>
+                    <div class="float-right">
+                      <button data-action="click->barcode-scanner#closeScannerModal">
+                        <svg class="icon icon-baseline w-5" viewbox="0 0 23 23" role="button"><title>Close pane</title>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle"><circle cx="12" cy="12" r="10" class="text-cyan-700 dark:text-cyan-500 stroke-current" fill="none" stroke-width="2"/><path class="text-cyan-700 dark:text-cyan-500 fill-current" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z" stroke-width="2"/></svg>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="mt-6 h-full">
+                      <p class="text-center font-semibold mt-6 text-xl clear-both">Scan barcode</p>
+                      <div id="scanner-container" class="mt-6 relative text-center">
+                        <div class="scanner-frame hidden absolute w-7 h-7 bg-transparent border-t-4 border-l-4 border-cyan-700 dark:border-cyan-500 rounded-t-md top-[12.5%] left-[10%]"></div>
+                        <div class="scanner-frame hidden absolute w-7 h-7 bg-transparent border-t-4 border-r-4 border-cyan-700 dark:border-cyan-500 rounded-t-md top-[12.5%] right-[10%]"></div>
+                        <div class="scanner-frame hidden absolute w-7 h-7 bg-transparent border-b-4 border-l-4 border-cyan-700 dark:border-cyan-500 rounded-b-md bottom-[72.5%] left-[10%]"></div>
+                        <div class="scanner-frame hidden absolute w-7 h-7 bg-transparent border-b-4 border-r-4 border-cyan-700 dark:border-cyan-500 rounded-b-md bottom-[72.5%] right-[10%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+<turbo-frame id="hidden-personalized-preview"
+             src="/personalized-preview.turbo_stream?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&personalized=false"
+             data-src-template="/personalized-preview.turbo_stream?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&personalized=false"
+             data-turbo-frame="hidden-personalized-preview">
+  </turbo-frame>
+  <div id="hidden-spinner" class="hidden">
+    <img alt="Loading..." title="Loading..." class="inline" src="https://assets.thestorygraph.com/assets/loading-more-books-7761b020456ba8abbe6fcf50ef10e4c5024faf4ce61d1a5eddd7963b7ce88d6a.svg" />
+  </div>
+
+
+<div class="hidden md:block container mx-auto max-w-6xl my-6">
+  <svg id="share-button" data-share-title="Кадавры" class="w-4 share-icon book-share-icon hidden" viewbox="0 0 24 24" role="button"><title>Share this book page</title><svg class="hidden dark:inline" id="share-icon" width="24" height="24" fill="none">
+<path fill="none" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#FAFAFA" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#FAFAFA" d="M12 17V2"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#FAFAFA" d="M7 7L12 2L17 7"></path>
+</svg>
+
+<svg class="inline dark:hidden" id="share-icon" width="24" height="24" fill="none">
+<path fill="none" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#666" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#666" d="M12 17V2"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#666" d="M7 7L12 2L17 7"></path>
+</svg>
+</svg>
+  <div class="grid grid-cols-3 lg:grid-cols-4 gap-7">
+    <div class="col-span-1">
+      <div class="text-center max-w-3xl mb-5">
+          <div class="book-cover">
+            <img alt="Кадавры by Алексей Поляринов" class="rounded-sm shadow-lg dark:shadow-darkerGrey/40 inline" src="https://cdn.thestorygraph.com/jwx7umizz4j3xkhuymztssy5pal1" />
+          </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="col-span-2">
+      <div class="book-title-author-and-series">
+        <h3 class="font-serif font-bold text-2xl md:w-11/12">Кадавры
+
+        <p class="font-body font-normal mb-1 text-base md:text-lg md:w-11/12">
+        <a class="hover:text-cyan-700 dark:hover:text-cyan-500" href="/authors/282bcf1d-49d9-44b3-827c-f5e09ffc6f8d">Алексей Поляринов</a>
+        </p></div>
+
+        <p class='text-sm font-light text-darkestGrey dark:text-grey mt-1'>
+        288 pages
+<span><span class="text-darkerGrey dark:text-lightGrey"> • </span> <span class="toggle-edition-info-link underline decoration-darkerGrey dark:decoration-lightGrey cursor-pointer hover:text-cyan-700 dark:hover:text-cyan-500 hover:decoration-cyan-700 dark:hover:decoration-cyan-500" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>first pub 2024</span></span>  (<a class="browse-editions-link text-sm text-darkestGrey dark:text-grey cursor-pointer font-medium hover:text-cyan-700 dark:hover:text-cyan-500 underline decoration-darkerGrey dark:decoration-lightGrey hover:decoration-cyan-700 dark:hover:decoration-cyan-500 mt-1 pb-1" href="/books/a477e024-e187-4407-ac9e-38d8c3579ea9/editions">editions</a>) 
+                  </p>
+
+        <div class="hidden edition-info mt-3" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <p class="text-sm"><span class="font-semibold">ISBN/UID:</span>  9785041958701</p>
+          <p class="text-sm"><span class="font-semibold">Format:</span> Hardcover</p>
+          <p class="text-sm"><span class="font-semibold">Language:</span> Russian</p>
+          <p class="text-sm"><span class="font-semibold">Publisher:</span> Inspiria</p>
+          <p class="text-sm"><span class="font-semibold">Publication date:</span> 01 April 2024</p>
+        </div>
+
+        <div class="book-page-review-section" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+</div>
+
+
+        <div class="mt-2 my-1 md:w-10/12">
+            <div class="book-page-tag-section" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+        <span class="inline-block text-xs sm:text-sm text-teal-700 dark:text-teal-200 mr-0.5 mt-1 border border-darkGrey dark:border-darkerGrey rounded-sm py-0.5 px-2">fiction</span>
+
+        <span class="inline-block text-xs sm:text-sm text-teal-700 dark:text-teal-200 mr-0.5 mt-1 border border-darkGrey dark:border-darkerGrey rounded-sm py-0.5 px-2">science fiction</span>
+
+
+  </div>
+
+        </div>
+
+        <div class="block lg:hidden mt-5 lg:mt-0">
+          <div class="action-menu action-menu-a477e024-e187-4407-ac9e-38d8c3579ea9 mt-2 md:mt-0" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+  <div class="w-full">
+    <div class="inline margin-auto">
+
+
+      <div class="inline-block relative w-11/12 lg:w-full mb-3 sm:mb-0">
+          <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=to-read"><button data-disable-with="Adding..." data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button rounded-l-sm border-r border-r-white dark:border-r-darkestGrey w-full text-xs min-[520px]:text-sm text-left" title="Add to your To-Read Pile" aria-label="Add to your To-Read Pile" type="submit">
+            to read
+</button><input type="hidden" name="authenticity_token" value="7i-t4oofILzrIrXoPmcPI0jO9Ih1zte5oV1OLT-3zgkmKnjbKUwBtS87qXv60unoG2F30uztWcJ7FY0qTW8NZg" autocomplete="off" /></form>        <div class="dropdown inline right-0 top-0 border-l border-white dark:border-darkestGrey hover:border-cyan-700 dark:hover:border-cyan-500 text-xs min-[520px]:text-sm">
+          <button class="btn-dropdown expand-dropdown-button" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+            <svg class="h-5 inline-block" role="button" viewBox="0 0 24 24" aria-label="Expand dropdown menu"><title>Expand dropdown menu</title>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-cheveron-down"><path class="text-white dark:text-darkestGrey fill-current" fill-rule="evenodd" d="M15.3 10.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+            </svg>
+          </button>
+            <div class="dropdown-content read-status-dropdown-content" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=read"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button w-max" title="Mark as read" aria-label="Mark as read" type="submit">read</button><input type="hidden" name="authenticity_token" value="DMmJMzh8cBtY-YmMMK2dXfT5G5O0GCrEDJr55OLpTpLEzFwKmy9REpzglR_0GHuWp1aYyS07pL_W0jrjkDGN_Q" autocomplete="off" /></form>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=currently-reading"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button border border-cyan-600 dark:border-cyan-400 w-max" title="Mark as currently reading" aria-label="Mark as currently reading" type="submit">currently reading</button><input type="hidden" name="authenticity_token" value="3VBy0Ro6-Cmz_pZSot106lOvs3ovdW7OC5TXEbj_NMAVVafouWnZIHfnisFmaJIhAAAwILZW4LXR3BQWyif3rw" autocomplete="off" /></form>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=did-not-finish"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button border border-cyan-600 dark:border-cyan-400 w-max" title="Mark as did not finish" aria-label="Mark as did not finish" type="submit">did not finish</button><input type="hidden" name="authenticity_token" value="5nmfXFktNVnHZDj3t2LnhaM6vmPee32piMVWhxkRWmMufEpl-n4UUAN9JGRz1wFO8JU9OUdY89JSjZWAa8mZDA" autocomplete="off" /></form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:hidden absolute inline text-left">
+      <div>
+        <button type="button" id="toggle-action-menu-and-links" class="pb-1 align-middle rounded-full items-center text-darkerGrey dark:text-lightGrey hover:text-cyan-700 dark:hover:text-cyan-500 focus:outline-none" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <span class="sr-only">Toggle book page action menu and links</span>
+          <!-- Heroicon name: solid/dots-vertical -->
+          <svg class="h-[29px] min-[520px]:h-[38px] w-[29px] min-[520px]:w-[38px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-action-menu absolute right-2 min-[520px]:right-4 md:static z-100 hidden bg-white dark:bg-darkestGrey border-2 lg:border-0 border-darkGrey dark:border-darkerGrey shadow-sm lg:shadow-none p-3 min-[520px]:p-5 md:p-6 lg:p-0 rounded-md w-auto md:w-11/12 lg:w-full mt-4 mx-2 md:mx-0 lg:mt-0 lg:block" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+        <form class="button_to" method="post" action="/add-to-up-next?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9"><button class="add-to-up-next-btn w-full text-left text-xs text-darkerGrey dark:text-grey" title="Add to your Up Next Queue" aria-label="Add to your Up Next Queue" type="submit">
+          <div class="py-2 px-2 border-x-2 border-x-darkGrey dark:border-x-darkerGrey border-t-2 border-b-2 border-y border-y-darkGrey dark:border-y-darkerGrey bg-grey dark:bg-darkestGrey hover:bg-darkGrey dark:hover:bg-darkerGrey inline-block w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline align-middle mr-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="btn-text align-bottom">add to "up next"</span>
+          </div>
+</button><input type="hidden" name="authenticity_token" value="bOTWv3jCoMoAJqX0YSzrFMNoS7vacK0NuRMx8jUbulZDqCQ-yx2VsNGzc9xri4_nPg_zSFaGgT-fhTe5YAagsA" autocomplete="off" /></form>
+
+
+
+
+
+
+    <div class="grid grid-cols-3 divide-x-2 divide-darkGrey dark:divide-darkerGrey w-full rounded-sm mt-4 border-2 border-darkGrey dark:border-darkerGrey bg-grey dark:bg-darkestGrey inline">
+        <div class="col-span-2 p-2 hover:bg-darkGrey dark:hover:bg-darkerGrey">
+          <a class="mark-as-owned-link text-xs text-darkerGrey dark:text-lightGrey inline hover:bg-darkGrey dark:hover:bg-darkerGrey" title="Mark as owned" aria-label="Mark as owned" rel="nofollow" data-method="post" href="/mark-as-owned?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">
+            <div class="text-center">
+              <span class="link-text">mark as owned</span>
+            </div>
+</a>        </div>
+        <button class="col-span-1 p-2 toggle-affiliate-links cursor-pointer text-xs text-darkerGrey dark:text-lightGrey hover:bg-darkGrey dark:hover:bg-darkerGrey" title="Buy" aria-label="Reveal affiliate links to buy book" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <div class="text-center">
+            <span>buy</span>
+          </div>
+        </button>
+    </div>
+    <div class="affiliate-links hidden mt-4" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9><div class="mt-4 text-center text-sm">
+  <p><a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://bookshop.org/books?affiliate=14456&amp;keywords=Кадавры Алексей+Поляринов">Bookshop US</a></p>
+  <p><a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://uk.bookshop.org/books?affiliate=159&amp;keywords=Кадавры Алексей+Поляринов">Bookshop UK</a><br>
+  <a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://blackwells.co.uk/bookshop/search/?keyword=Кадавры Алексей+Поляринов&amp;a_aid=thestorygraph">Blackwell&#39;s</a></p>
+  <div class="hidden lg:block">
+    <p class="mt-3 italic text-xs">The StoryGraph is an affiliate of the featured links. We earn commission on any purchases made.</p>
+  </div>
+  <div class="block lg:hidden">
+    <p class="mt-3 italic text-xs">The StoryGraph is an affiliate of the featured links.<br />We earn commission on any purchases made.</p>
+  </div>
+</div>
+</div>
+
+
+    <div class="max-w-3xl text-xs min-[520px]:text-sm mt-3 min-[520px]:mt-5 mb-1 min-[520px]:mb-3 mr-2 pl-0.5">
+      <p class="inline !leading-6 pr-4">
+      <a class="standard-link similar-books-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500 mr-2" href="/books/a477e024-e187-4407-ac9e-38d8c3579ea9/similar">Browse similar books...</a>
+      </p>
+    </div>
+    <div class="similar-books-loading"></div>
+
+    <div class="section readalong-actions mt-4 min-[520px]:mt-5">
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-2 mr-2 pl-0.5">
+        <p class="text-xs min-[520px]:text-sm !leading-6">
+        <a class="new-readalong-link standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/readalongs/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Start a readalong...</a>
+        </p>
+      </div>
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-2 mr-2 pl-0.5">
+        <p class="text-xs min-[520px]:text-sm !leading-6">
+        <a class="new-buddy-read-link standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/buddy_reads/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Start a buddy read...</a>
+        <div class="buddy-read-loading"></div>
+        </p>
+      </div>
+    </div>
+
+    <div class="section user-interactions mt-4 min-[520px]:mt-5">
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mr-2 pl-0.5">
+        <p class="inline !leading-6 pr-4">
+        <a class="standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500 mr-2" href="/book_club_questions?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">View question bank...</a>
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-5 text-xs min-[520px]:text-base uppercase min-[520px]:normal-case min-[520px]:mt-6 font-bold min-[520px]:font-semibold text-darkerGrey dark:text-darkGrey pl-0.5">Book Information</p>
+    <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-3 pl-0.5">
+      <p class="text-xs min-[520px]:text-sm !leading-6">
+      <a class="standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/book_tickets/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Report missing/incorrect information...</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+        </div>
+
+
+        <div id="storygraph-preview-pane-desktop" class="storygraph-preview-pane">
+              <div class="mt-6 pb-2 mb-5 standard-pane book-pane blurb-pane break-words">
+                <div class="border-b border-darkGrey">
+                  <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                    <a href="#" data-personalized="false" data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="cursor-default pointer-events-none whitespace-nowrap border-b-2 border-darkerGrey dark:border-lightGrey px-1 uppercase font-medium">StoryGraph Preview</a>
+                    <a href="#" data-personalized="true" data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="border-transparent whitespace-nowrap border-b px-1 font-light text-sm uppercase">Personalized</a>
+                  </nav>
+                </div>
+                <span title="This preview has been generated just for you using machine learning" class="mb-5 inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-yellow-100 text-yellow-800">
+                  Powered by AI (Beta)
+                </span><br />
+                <turbo-frame id="personalized-preview-desktop-a477e024-e187-4407-ac9e-38d8c3579ea9" class="contents">
+                  <div class="col-span-2 text-center">
+                    <img alt="Loading..." title="Loading..." class="inline" src="https://assets.thestorygraph.com/assets/loading-more-books-7761b020456ba8abbe6fcf50ef10e4c5024faf4ce61d1a5eddd7963b7ce88d6a.svg" />
+                  </div>
+                </turbo-frame>
+              </div>
+        </div>
+          <div class="mt-6 pb-2 mb-5 standard-pane book-pane blurb-pane break-words">
+            <h4 class="section-heading uppercase">Description</h4>
+              <p class="trix-content mt-3">События нового романа Алексея Поляринова разворачиваются в мире, где тридцать лет назад произошла катастрофа и по всей стране возникли кадавры — застывшие фигуры мертвых детей. Главные герои Матвей и Даша отправляются в экспедицию по югу страны, ч...</p>
+              <p class="mb-4"><a id="read-more-a477e024-e187-4407-ac9e-38d8c3579ea9" class="read-more-btn standard-link font-medium uppercase text-sm border-b mb-4" href="">Read more</a></p>
+          </div>
+          <script>
+            $('.read-more-btn').on('click', function(e) {
+              e.preventDefault()
+              $(this).parent().parent().html('<h4 class="section-heading uppercase">Description</h4><div class="trix-content mt-3"><div>События нового романа Алексея Поляринова разворачиваются в мире, где тридцать лет назад произошла катастрофа и по всей стране возникли кадавры — застывшие фигуры мертвых детей. Главные герои Матвей и Даша отправляются в экспедицию по югу страны, чтобы изучить загадочные аномалии. Во время путешествия они обнаруживают, как присутствие мертвых изменило быт живых и как живые привыкли делить пространство с мертвыми.<br><br><\/div><div>«Я хотел написать книгу про конец света. Но не такой стремительный, каким его обычно изображают в поп-культуре. Мне хотелось показать долгий и мучительный конец света, когда люди живут внутри апокалипсиса много лет и в конце концов привыкают к нему». — Алексей Поляринов&nbsp;<br><br><\/div></div>')
+            })
+          </script>
+
+          <div class="mb-6 md:mb-0 mt-6 px-2 md:px-unset md:standard-pane md:block book-pane break-words">
+    <h3 class="community-reviews-heading section-heading uppercase">Community Reviews
+        <span class="font-normal text-sm block md:inline md:ml-2">Summary of
+            <a class="standard-link font-medium uppercase border-b" href="/book_reviews/a477e024-e187-4407-ac9e-38d8c3579ea9">14 reviews</a>
+        </span>
+    </h3>
+    <div class="grid grid-cols-2 gap-2">
+      <div class="col-span-1">
+          <p class="review-question mt-4 font-semibold">Moods</p>
+          <div class="moods-list-reviews">
+              <span class="md:mr-1">dark</span> <span class='percentage'>75%</span><br>
+              <span class="md:mr-1">reflective</span> <span class='percentage'>50%</span><br>
+              <span class="md:mr-1">emotional</span> <span class='percentage'>37%</span><br>
+              <span class="md:mr-1">sad</span> <span class='percentage'>37%</span><br>
+              <span class="md:mr-1">adventurous</span> <span class='percentage'>25%</span><br>
+              <span class="md:mr-1">mysterious</span> <span class='percentage'>25%</span><br>
+              <span class="md:mr-1">tense</span> <span class='percentage'>12%</span><br>
+          </div>
+      </div>
+      <div class="col-span-1">
+          <p class="review-question mt-4 font-semibold">Pace</p>
+          <div class="paces-reviews">
+              <span class="md:mr-1">fast</span> <span class='percentage'>50%</span><br>
+              <span class="md:mr-1">slow</span> <span class='percentage'>25%</span><br>
+              <span class="md:mr-1">medium</span> <span class='percentage'>25%</span><br>
+          </div>
+      </div>
+    </div>
+
+        <div>
+            <p class="review-character-question font-semibold mt-4">Plot- or character-driven?</p>
+            <span class="review-response-summary">Character: 57% | Plot: 28% | A mix: 14% </span>
+
+            <p class="review-character-question font-semibold mt-4">Strong character development?</p>
+            <span class="review-response-summary">It&#39;s complicated: 57% | No: 28% | Yes: 14% </span>
+
+            <p class="review-character-question font-semibold mt-4">Loveable characters?</p>
+            <span class="review-response-summary">No: 57% | Yes: 28% | It&#39;s complicated: 14% </span>
+
+            <p class="review-character-question font-semibold mt-4">Diverse cast of characters?</p>
+            <span class="review-response-summary">Yes: 57% | No: 42% </span>
+
+            <p class="review-character-question font-semibold mt-4">Flaws of characters a main focus?</p>
+            <span class="review-response-summary">Yes: 71% | No: 14% | It&#39;s complicated: 14% </span>
+        </div>
+
+        <p class="review-question font-semibold mt-4">Average rating</p>
+        <span class="average-star-rating">4.32 <svg class="icon-star w-6 inline-flex relative right-2 pb-1" viewbox="0 0 23 23">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" class="fill-current text-transparent"/><path class="fill-current text-yellow-300" d="M9.53 16.93a1 1 0 0 1-1.45-1.05l.47-2.76-2-1.95a1 1 0 0 1 .55-1.7l2.77-.4 1.23-2.51a1 1 0 0 1 1.8 0l1.23 2.5 2.77.4a1 1 0 0 1 .55 1.71l-2 1.95.47 2.76a1 1 0 0 1-1.45 1.05L12 15.63l-2.47 1.3z"/></svg>
+          </svg>
+        </span>
+
+      <p class="mt-4"><a class="standard-link font-medium uppercase border-b" href="/book_reviews/a477e024-e187-4407-ac9e-38d8c3579ea9">See all reviews...</a></p>
+  </div>
+
+        <div class="mb-6 md:mb-0 mt-6 px-2 md:px-unset md:standard-pane inline-block md:block book-pane break-words">
+  <h3 class="section-heading uppercase mb-2">Content Warnings</h3>
+    <p class="italic mb-4">Submitted by users as part of their reviews</p>
+    <div class="content-warning-information">
+      <div class="toggle-content-warnings-information-book cursor-pointer dark:hidden">
+        <svg class="icon chevron-right content-warnings w-6 -ml-2 inline" viewbox="0 0 20 20" role="button"><title>Expand filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-cheveron-right"><path class="secondary" d="M10.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/></svg>
+        </svg>
+        <svg class="hidden inline icon chevron-down content-warnings -ml-2  w-6" viewbox="0 0 20 20" role="button"><title>Collapse filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-cheveron-down"><path class="secondary" fill-rule="evenodd" d="M15.3 10.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+        </svg>
+        <span class="cursor-pointer mb-4">View summary</span>
+      </div>
+      <div class="toggle-content-warnings-information-book cursor-pointer hidden dark:inline">
+        <svg class="icon chevron-right content-warnings w-6 -ml-2 inline" stroke="#f5f5f5" viewbox="0 0 20 20" role="button"><title>Expand filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#f5f5f5" fill="#f5f5f5" class="icon-cheveron-right"><path class="secondary" d="M10.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/></svg>
+        </svg>
+        <svg class="hidden inline icon chevron-down content-warnings -ml-2  w-6" stroke="#f5f5f5" viewbox="0 0 20 20" role="button"><title>Collapse filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#f5f5f5" fill="#f5f5f5" class="icon-cheveron-down"><path class="secondary" fill-rule="evenodd" d="M15.3 10.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+        </svg>
+        <span class="cursor-pointer mb-4">View summary</span>
+      </div>
+      <div class="hidden content-warnings-information mt-4">
+          <p class="mt-4"><b>Minor</b></p>
+          Child abuse, Child death, Injury/Injury detail
+        <br/><br/>
+      </div>
+    </div>
+    <p class="mt-4"><a class="standard-link font-medium uppercase border-b" href="/books/a477e024-e187-4407-ac9e-38d8c3579ea9/content_warnings">See all...</a></p>
+</div>
+
+    </div>
+
+    <div class="hidden lg:block col-span-1">
+      <div class="action-menu action-menu-a477e024-e187-4407-ac9e-38d8c3579ea9 mt-2 md:mt-0" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+  <div class="w-full">
+    <div class="inline margin-auto">
+
+
+      <div class="inline-block relative w-11/12 lg:w-full mb-3 sm:mb-0">
+          <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=to-read"><button data-disable-with="Adding..." data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button rounded-l-sm border-r border-r-white dark:border-r-darkestGrey w-full text-xs min-[520px]:text-sm text-left" title="Add to your To-Read Pile" aria-label="Add to your To-Read Pile" type="submit">
+            to read
+</button><input type="hidden" name="authenticity_token" value="67NNxpbPqNpE_EIdZdxpJd9SOtCajnOkJ_Rid8KZgRkjtpj_NZyJ04DlXo6haY_ujP25igOt_d_9vKFwsEFCdg" autocomplete="off" /></form>        <div class="dropdown inline right-0 top-0 border-l border-white dark:border-darkestGrey hover:border-cyan-700 dark:hover:border-cyan-500 text-xs min-[520px]:text-sm">
+          <button class="btn-dropdown expand-dropdown-button" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+            <svg class="h-5 inline-block" role="button" viewBox="0 0 24 24" aria-label="Expand dropdown menu"><title>Expand dropdown menu</title>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-cheveron-down"><path class="text-white dark:text-darkestGrey fill-current" fill-rule="evenodd" d="M15.3 10.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+            </svg>
+          </button>
+            <div class="dropdown-content read-status-dropdown-content" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=read"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button w-max" title="Mark as read" aria-label="Mark as read" type="submit">read</button><input type="hidden" name="authenticity_token" value="H-Oo24x0IrTRzmvbKEZ_Z5yY7vyfKMiaiSGRqFNqBqPX5n3iLycDvRXXd0js85mszzdtpgYLRuFTaVKvIbLFzA" autocomplete="off" /></form>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=currently-reading"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button border border-cyan-600 dark:border-cyan-400 w-max" title="Mark as currently reading" aria-label="Mark as currently reading" type="submit">currently reading</button><input type="hidden" name="authenticity_token" value="LWOTsAtYrxrobXo7pQBOMF3QtJGgTb1cjK5p_wQmDdrlZkaJqAuOEyx0Zqhhtaj7Dn83yzluMydW5qr4dv7OtQ" autocomplete="off" /></form>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=did-not-finish"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button border border-cyan-600 dark:border-cyan-400 w-max" title="Mark as did not finish" aria-label="Mark as did not finish" type="submit">did not finish</button><input type="hidden" name="authenticity_token" value="Wrf8TDDbUGKSAR3gDgNhTucTmHiOaAJzjuS0oSHxAImSsil1k4hxa1YYAXPKtoeFtLwbIhdLjAhUrHemUynD5g" autocomplete="off" /></form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:hidden absolute inline text-left">
+      <div>
+        <button type="button" id="toggle-action-menu-and-links" class="pb-1 align-middle rounded-full items-center text-darkerGrey dark:text-lightGrey hover:text-cyan-700 dark:hover:text-cyan-500 focus:outline-none" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <span class="sr-only">Toggle book page action menu and links</span>
+          <!-- Heroicon name: solid/dots-vertical -->
+          <svg class="h-[29px] min-[520px]:h-[38px] w-[29px] min-[520px]:w-[38px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-action-menu absolute right-2 min-[520px]:right-4 md:static z-100 hidden bg-white dark:bg-darkestGrey border-2 lg:border-0 border-darkGrey dark:border-darkerGrey shadow-sm lg:shadow-none p-3 min-[520px]:p-5 md:p-6 lg:p-0 rounded-md w-auto md:w-11/12 lg:w-full mt-4 mx-2 md:mx-0 lg:mt-0 lg:block" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+        <form class="button_to" method="post" action="/add-to-up-next?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9"><button class="add-to-up-next-btn w-full text-left text-xs text-darkerGrey dark:text-grey" title="Add to your Up Next Queue" aria-label="Add to your Up Next Queue" type="submit">
+          <div class="py-2 px-2 border-x-2 border-x-darkGrey dark:border-x-darkerGrey border-t-2 border-b-2 border-y border-y-darkGrey dark:border-y-darkerGrey bg-grey dark:bg-darkestGrey hover:bg-darkGrey dark:hover:bg-darkerGrey inline-block w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline align-middle mr-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="btn-text align-bottom">add to "up next"</span>
+          </div>
+</button><input type="hidden" name="authenticity_token" value="IY9VXFEEFGkWN4r56Y8vyRF4_zpARcue64hZyCpId9YOw6fd4tshE8eiXNHjKEs67B9Hycyz56zNHl-Df1VtMA" autocomplete="off" /></form>
+
+
+
+
+
+
+    <div class="grid grid-cols-3 divide-x-2 divide-darkGrey dark:divide-darkerGrey w-full rounded-sm mt-4 border-2 border-darkGrey dark:border-darkerGrey bg-grey dark:bg-darkestGrey inline">
+        <div class="col-span-2 p-2 hover:bg-darkGrey dark:hover:bg-darkerGrey">
+          <a class="mark-as-owned-link text-xs text-darkerGrey dark:text-lightGrey inline hover:bg-darkGrey dark:hover:bg-darkerGrey" title="Mark as owned" aria-label="Mark as owned" rel="nofollow" data-method="post" href="/mark-as-owned?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">
+            <div class="text-center">
+              <span class="link-text">mark as owned</span>
+            </div>
+</a>        </div>
+        <button class="col-span-1 p-2 toggle-affiliate-links cursor-pointer text-xs text-darkerGrey dark:text-lightGrey hover:bg-darkGrey dark:hover:bg-darkerGrey" title="Buy" aria-label="Reveal affiliate links to buy book" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <div class="text-center">
+            <span>buy</span>
+          </div>
+        </button>
+    </div>
+    <div class="affiliate-links hidden mt-4" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9><div class="mt-4 text-center text-sm">
+  <p><a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://bookshop.org/books?affiliate=14456&amp;keywords=Кадавры Алексей+Поляринов">Bookshop US</a></p>
+  <p><a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://uk.bookshop.org/books?affiliate=159&amp;keywords=Кадавры Алексей+Поляринов">Bookshop UK</a><br>
+  <a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://blackwells.co.uk/bookshop/search/?keyword=Кадавры Алексей+Поляринов&amp;a_aid=thestorygraph">Blackwell&#39;s</a></p>
+  <div class="hidden lg:block">
+    <p class="mt-3 italic text-xs">The StoryGraph is an affiliate of the featured links. We earn commission on any purchases made.</p>
+  </div>
+  <div class="block lg:hidden">
+    <p class="mt-3 italic text-xs">The StoryGraph is an affiliate of the featured links.<br />We earn commission on any purchases made.</p>
+  </div>
+</div>
+</div>
+
+
+    <div class="max-w-3xl text-xs min-[520px]:text-sm mt-3 min-[520px]:mt-5 mb-1 min-[520px]:mb-3 mr-2 pl-0.5">
+      <p class="inline !leading-6 pr-4">
+      <a class="standard-link similar-books-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500 mr-2" href="/books/a477e024-e187-4407-ac9e-38d8c3579ea9/similar">Browse similar books...</a>
+      </p>
+    </div>
+    <div class="similar-books-loading"></div>
+
+    <div class="section readalong-actions mt-4 min-[520px]:mt-5">
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-2 mr-2 pl-0.5">
+        <p class="text-xs min-[520px]:text-sm !leading-6">
+        <a class="new-readalong-link standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/readalongs/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Start a readalong...</a>
+        </p>
+      </div>
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-2 mr-2 pl-0.5">
+        <p class="text-xs min-[520px]:text-sm !leading-6">
+        <a class="new-buddy-read-link standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/buddy_reads/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Start a buddy read...</a>
+        <div class="buddy-read-loading"></div>
+        </p>
+      </div>
+    </div>
+
+    <div class="section user-interactions mt-4 min-[520px]:mt-5">
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mr-2 pl-0.5">
+        <p class="inline !leading-6 pr-4">
+        <a class="standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500 mr-2" href="/book_club_questions?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">View question bank...</a>
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-5 text-xs min-[520px]:text-base uppercase min-[520px]:normal-case min-[520px]:mt-6 font-bold min-[520px]:font-semibold text-darkerGrey dark:text-darkGrey pl-0.5">Book Information</p>
+    <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-3 pl-0.5">
+      <p class="text-xs min-[520px]:text-sm !leading-6">
+      <a class="standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/book_tickets/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Report missing/incorrect information...</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="block md:hidden container px-0 mx-auto">
+  <svg id="share-button" data-share-title="Кадавры" class="w-4 share-icon book-share-icon hidden" viewbox="0 0 24 24" role="button"><title>Share this book page</title><svg class="hidden dark:inline" id="share-icon" width="24" height="24" fill="none">
+<path fill="none" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#FAFAFA" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#FAFAFA" d="M12 17V2"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#FAFAFA" d="M7 7L12 2L17 7"></path>
+</svg>
+
+<svg class="inline dark:hidden" id="share-icon" width="24" height="24" fill="none">
+<path fill="none" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14" undefined="1"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#666" d="M22 14V21C22 21.55 21.55 22 21 22H3C2.45 22 2 21.55 2 21V14"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#666" d="M12 17V2"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#666" d="M7 7L12 2L17 7"></path>
+</svg>
+</svg>
+  <div class="mt-3 grid grid-cols-5 gap-3">
+    <div class="col-span-2">
+      <div class="text-center max-w-3xl mb-5">
+          <div class="book-cover">
+            <img alt="Кадавры by Алексей Поляринов" class="rounded-sm shadow-lg dark:shadow-darkerGrey/40 inline" src="https://cdn.thestorygraph.com/jwx7umizz4j3xkhuymztssy5pal1" />
+          </div>
+      </div>
+    </div>
+
+    <div class="col-span-3">
+      <div class="book-title-author-and-series">
+        <h3 class="font-serif font-bold text-lg min-[520px]:text-2xl leading-6">Кадавры
+
+        <p class="font-body font-normal my-1 text-xs min-[520px]:text-base">
+        <a class="hover:text-cyan-700" href="/authors/282bcf1d-49d9-44b3-827c-f5e09ffc6f8d">Алексей Поляринов</a>
+        </p></div>
+        <p class='text-xs min-[520px]:text-sm font-light text-darkestGrey dark:text-grey mt-1'>
+        288 pages
+<span><span class="text-darkerGrey dark:text-lightGrey"> • </span> <span class="toggle-edition-info-link underline decoration-darkerGrey dark:decoration-lightGrey cursor-pointer hover:text-cyan-700 dark:hover:text-cyan-500 hover:decoration-cyan-700 dark:hover:decoration-cyan-500" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>first pub 2024</span></span>  (<a class="browse-editions-link text-xs min-[520px]:text-sm text-darkestGrey dark:text-lightGrey cursor-pointer font-medium hover:text-cyan-700 dark:hover:text-cyan-500 underline decoration-darkerGrey dark:decoration-lightGrey hover:decoration-cyan-700 dark:hover:decoration-cyan-500 mt-1 pb-1" href="/books/a477e024-e187-4407-ac9e-38d8c3579ea9/editions">editions</a>) 
+                  </p>
+
+        <div class="hidden edition-info mt-3" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <p class="text-xs"><span class="font-semibold">ISBN/UID:</span>  9785041958701</p>
+          <p class="text-xs"><span class="font-semibold">Format:</span> Hardcover</p>
+          <p class="text-xs"><span class="font-semibold">Language:</span> Russian</p>
+          <p class="text-xs"><span class="font-semibold">Publisher:</span> Inspiria</p>
+          <p class="text-xs"><span class="font-semibold">Publication date:</span> 01 April 2024</p>
+        </div>
+
+        <div class="book-page-review-section" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+</div>
+
+
+        <div class="action-menu action-menu-a477e024-e187-4407-ac9e-38d8c3579ea9 mt-2 md:mt-0" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+  <div class="w-full">
+    <div class="inline margin-auto">
+
+
+      <div class="inline-block relative w-11/12 lg:w-full mb-3 sm:mb-0">
+          <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=to-read"><button data-disable-with="Adding..." data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button rounded-l-sm border-r border-r-white dark:border-r-darkestGrey w-full text-xs min-[520px]:text-sm text-left" title="Add to your To-Read Pile" aria-label="Add to your To-Read Pile" type="submit">
+            to read
+</button><input type="hidden" name="authenticity_token" value="UyMLHzn3AG2kGU0hc1-DGDj2V1zaABrvFGO4pdQmu7CbJt4mmqQhZGAAUbK36mXTa1nUBkMjlJTOK3uipv543w" autocomplete="off" /></form>        <div class="dropdown inline right-0 top-0 border-l border-white dark:border-darkestGrey hover:border-cyan-700 dark:hover:border-cyan-500 text-xs min-[520px]:text-sm">
+          <button class="btn-dropdown expand-dropdown-button" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+            <svg class="h-5 inline-block" role="button" viewBox="0 0 24 24" aria-label="Expand dropdown menu"><title>Expand dropdown menu</title>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-cheveron-down"><path class="text-white dark:text-darkestGrey fill-current" fill-rule="evenodd" d="M15.3 10.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+            </svg>
+          </button>
+            <div class="dropdown-content read-status-dropdown-content" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=read"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button w-max" title="Mark as read" aria-label="Mark as read" type="submit">read</button><input type="hidden" name="authenticity_token" value="6ygnl8G7LEve2nXoT88nzFgPPxslHVuSHom7w_Gr7GQjLfKuYugNQhrDaXuLesEHC6C8Qbw-1enEwXjEg3MvCw" autocomplete="off" /></form>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=currently-reading"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button border border-cyan-600 dark:border-cyan-400 w-max" title="Mark as currently reading" aria-label="Mark as currently reading" type="submit">currently reading</button><input type="hidden" name="authenticity_token" value="YWihoDP2aIDrkWnPSlrwOInIR7tALLFczPQjAvb_NqOpbXSZkKVJiS-IdVyO7xbz2mfE4dkPPycWvOAFhCf1zA" autocomplete="off" /></form>
+              <form class="button_to" method="post" action="/update-status.js?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&amp;status=did-not-finish"><button data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="btn-dropdown read-status-button border border-cyan-600 dark:border-cyan-400 w-max" title="Mark as did not finish" aria-label="Mark as did not finish" type="submit">did not finish</button><input type="hidden" name="authenticity_token" value="JxJYayj58Oed3ipDccb1TwOwV476xc91qddyR9fP9FvvF41Si6rR7lnHNtC1cxOEUB_U1GPmQQ5zn7FApRc3NA" autocomplete="off" /></form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:hidden absolute inline text-left">
+      <div>
+        <button type="button" id="toggle-action-menu-and-links" class="pb-1 align-middle rounded-full items-center text-darkerGrey dark:text-lightGrey hover:text-cyan-700 dark:hover:text-cyan-500 focus:outline-none" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <span class="sr-only">Toggle book page action menu and links</span>
+          <!-- Heroicon name: solid/dots-vertical -->
+          <svg class="h-[29px] min-[520px]:h-[38px] w-[29px] min-[520px]:w-[38px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-action-menu absolute right-2 min-[520px]:right-4 md:static z-100 hidden bg-white dark:bg-darkestGrey border-2 lg:border-0 border-darkGrey dark:border-darkerGrey shadow-sm lg:shadow-none p-3 min-[520px]:p-5 md:p-6 lg:p-0 rounded-md w-auto md:w-11/12 lg:w-full mt-4 mx-2 md:mx-0 lg:mt-0 lg:block" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+        <form class="button_to" method="post" action="/add-to-up-next?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9"><button class="add-to-up-next-btn w-full text-left text-xs text-darkerGrey dark:text-grey" title="Add to your Up Next Queue" aria-label="Add to your Up Next Queue" type="submit">
+          <div class="py-2 px-2 border-x-2 border-x-darkGrey dark:border-x-darkerGrey border-t-2 border-b-2 border-y border-y-darkGrey dark:border-y-darkerGrey bg-grey dark:bg-darkestGrey hover:bg-darkGrey dark:hover:bg-darkerGrey inline-block w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline align-middle mr-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="btn-text align-bottom">add to "up next"</span>
+          </div>
+</button><input type="hidden" name="authenticity_token" value="gLT9vVckqyn_K3zSuYsPpihurHOh1sdBEvePzv4lYvyv-A885PueUy6-qvqzLGtV1QkUgC0g63M0YYmFqzh4Gg" autocomplete="off" /></form>
+
+
+
+
+
+
+    <div class="grid grid-cols-3 divide-x-2 divide-darkGrey dark:divide-darkerGrey w-full rounded-sm mt-4 border-2 border-darkGrey dark:border-darkerGrey bg-grey dark:bg-darkestGrey inline">
+        <div class="col-span-2 p-2 hover:bg-darkGrey dark:hover:bg-darkerGrey">
+          <a class="mark-as-owned-link text-xs text-darkerGrey dark:text-lightGrey inline hover:bg-darkGrey dark:hover:bg-darkerGrey" title="Mark as owned" aria-label="Mark as owned" rel="nofollow" data-method="post" href="/mark-as-owned?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">
+            <div class="text-center">
+              <span class="link-text">mark as owned</span>
+            </div>
+</a>        </div>
+        <button class="col-span-1 p-2 toggle-affiliate-links cursor-pointer text-xs text-darkerGrey dark:text-lightGrey hover:bg-darkGrey dark:hover:bg-darkerGrey" title="Buy" aria-label="Reveal affiliate links to buy book" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+          <div class="text-center">
+            <span>buy</span>
+          </div>
+        </button>
+    </div>
+    <div class="affiliate-links hidden mt-4" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9><div class="mt-4 text-center text-sm">
+  <p><a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://bookshop.org/books?affiliate=14456&amp;keywords=Кадавры Алексей+Поляринов">Bookshop US</a></p>
+  <p><a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://uk.bookshop.org/books?affiliate=159&amp;keywords=Кадавры Алексей+Поляринов">Bookshop UK</a><br>
+  <a target="_blank" rel="nofollow" class="font-semibold hover:text-cyan-700 dark:hover:text-cyan-500" href="https://blackwells.co.uk/bookshop/search/?keyword=Кадавры Алексей+Поляринов&amp;a_aid=thestorygraph">Blackwell&#39;s</a></p>
+  <div class="hidden lg:block">
+    <p class="mt-3 italic text-xs">The StoryGraph is an affiliate of the featured links. We earn commission on any purchases made.</p>
+  </div>
+  <div class="block lg:hidden">
+    <p class="mt-3 italic text-xs">The StoryGraph is an affiliate of the featured links.<br />We earn commission on any purchases made.</p>
+  </div>
+</div>
+</div>
+
+
+    <div class="max-w-3xl text-xs min-[520px]:text-sm mt-3 min-[520px]:mt-5 mb-1 min-[520px]:mb-3 mr-2 pl-0.5">
+      <p class="inline !leading-6 pr-4">
+      <a class="standard-link similar-books-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500 mr-2" href="/books/a477e024-e187-4407-ac9e-38d8c3579ea9/similar">Browse similar books...</a>
+      </p>
+    </div>
+    <div class="similar-books-loading"></div>
+
+    <div class="section readalong-actions mt-4 min-[520px]:mt-5">
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-2 mr-2 pl-0.5">
+        <p class="text-xs min-[520px]:text-sm !leading-6">
+        <a class="new-readalong-link standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/readalongs/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Start a readalong...</a>
+        </p>
+      </div>
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-2 mr-2 pl-0.5">
+        <p class="text-xs min-[520px]:text-sm !leading-6">
+        <a class="new-buddy-read-link standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/buddy_reads/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Start a buddy read...</a>
+        <div class="buddy-read-loading"></div>
+        </p>
+      </div>
+    </div>
+
+    <div class="section user-interactions mt-4 min-[520px]:mt-5">
+      <div class="max-w-3xl text-xs min-[520px]:text-sm mr-2 pl-0.5">
+        <p class="inline !leading-6 pr-4">
+        <a class="standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500 mr-2" href="/book_club_questions?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">View question bank...</a>
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-5 text-xs min-[520px]:text-base uppercase min-[520px]:normal-case min-[520px]:mt-6 font-bold min-[520px]:font-semibold text-darkerGrey dark:text-darkGrey pl-0.5">Book Information</p>
+    <div class="max-w-3xl text-xs min-[520px]:text-sm mt-1 min-[520px]:mt-3 pl-0.5">
+      <p class="text-xs min-[520px]:text-sm !leading-6">
+      <a class="standard-link font-medium text-darkerGrey dark:text-darkGrey border-b border-darkerGrey dark:border-lightGrey hover:border-cyan-700 dark:hover:border-cyan-500" href="/book_tickets/new?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9">Report missing/incorrect information...</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+  <div class="w-full absolute right-0 left-0 h-[1px] bg-darkGrey dark:bg-darkerGrey"></div>
+  <div class="mt-3 mb-4 inline-block w-11/12">
+      <div class="book-page-tag-section" data-book-id=a477e024-e187-4407-ac9e-38d8c3579ea9>
+        <span class="inline-block text-xs sm:text-sm text-teal-700 dark:text-teal-200 mr-0.5 mt-1 border border-darkGrey dark:border-darkerGrey rounded-sm py-0.5 px-2">fiction</span>
+
+        <span class="inline-block text-xs sm:text-sm text-teal-700 dark:text-teal-200 mr-0.5 mt-1 border border-darkGrey dark:border-darkerGrey rounded-sm py-0.5 px-2">science fiction</span>
+
+
+  </div>
+
+  </div>
+
+
+  <div class="w-full absolute right-0 left-0 h-[1px] bg-darkGrey dark:bg-darkerGrey"></div>
+
+
+  <div id="storygraph-preview-pane-mobile" class="storygraph-preview-pane px-2">
+        <div class="mb-6 mt-6 pb-2 mb-5 inline-block book-pane blurb-pane break-words w-full">
+          <div>
+            <nav class="-mb-px flex space-x-4 sm:space-x-6" aria-label="Tabs">
+              <a href="#" data-personalized="false" data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="cursor-default pointer-events-none whitespace-nowrap border-b-2 border-darkerGrey dark:border-lightGrey px-1 uppercase font-medium">StoryGraph Preview</a>
+              <a href="#" data-personalized="true" data-book-id="a477e024-e187-4407-ac9e-38d8c3579ea9" class="border-transparent whitespace-nowrap border-b px-1 font-light text-sm uppercase">Personalized</a>
+            </nav>
+          </div>
+          <span title="This preview has been generated just for you using machine learning" class="mb-5 inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-yellow-100 text-yellow-800">
+            Powered by AI (Beta)
+          </span><br />
+          <turbo-frame id="personalized-preview-mobile-a477e024-e187-4407-ac9e-38d8c3579ea9" class="contents">
+            <div class="col-span-2 text-center">
+              <img alt="Loading..." title="Loading..." class="inline" src="https://assets.thestorygraph.com/assets/loading-more-books-7761b020456ba8abbe6fcf50ef10e4c5024faf4ce61d1a5eddd7963b7ce88d6a.svg" />
+            </div>
+          </turbo-frame>
+        </div>
+      <div class="w-full absolute right-0 left-0 h-[1px] bg-darkGrey dark:bg-darkerGrey"></div>
+  </div>
+
+    <div class="mb-6 mt-6 pb-2 mb-5 inline-block book-pane blurb-pane break-words">
+      <h4 class="section-heading uppercase">Description</h4>
+        <p class="trix-content mt-3">События нового романа Алексея Поляринова разворачиваются в мире, где тридцать лет назад произошла катастрофа и по всей стране возникли кадавры — застывшие фигуры мертвых детей. Главные герои Матвей и Даша отправляются в экспедицию по югу страны, ч...</p>
+        <p class="mb-4"><a id="read-more-a477e024-e187-4407-ac9e-38d8c3579ea9" class="read-more-btn standard-link font-medium uppercase text-sm border-b mb-4" href="">Read more</a></p>
+    </div>
+    <script>
+      $('.read-more-btn').on('click', function(e) {
+        e.preventDefault()
+        $(this).parent().parent().html('<h4 class="section-heading uppercase">Description</h4><div class="trix-content mt-3"><div>События нового романа Алексея Поляринова разворачиваются в мире, где тридцать лет назад произошла катастрофа и по всей стране возникли кадавры — застывшие фигуры мертвых детей. Главные герои Матвей и Даша отправляются в экспедицию по югу страны, чтобы изучить загадочные аномалии. Во время путешествия они обнаруживают, как присутствие мертвых изменило быт живых и как живые привыкли делить пространство с мертвыми.<br><br><\/div><div>«Я хотел написать книгу про конец света. Но не такой стремительный, каким его обычно изображают в поп-культуре. Мне хотелось показать долгий и мучительный конец света, когда люди живут внутри апокалипсиса много лет и в конце концов привыкают к нему». — Алексей Поляринов&nbsp;<br><br><\/div></div>')
+      })
+    </script>
+  <div class="w-full absolute right-0 left-0 h-[1px] bg-darkGrey dark:bg-darkerGrey"></div>
+
+
+    <div class="mb-6 md:mb-0 mt-6 px-2 md:px-unset md:standard-pane md:block book-pane break-words">
+    <h3 class="community-reviews-heading section-heading uppercase">Community Reviews
+        <span class="font-normal text-sm block md:inline md:ml-2">Summary of
+            <a class="standard-link font-medium uppercase border-b" href="/book_reviews/a477e024-e187-4407-ac9e-38d8c3579ea9">14 reviews</a>
+        </span>
+    </h3>
+    <div class="grid grid-cols-2 gap-2">
+      <div class="col-span-1">
+          <p class="review-question mt-4 font-semibold">Moods</p>
+          <div class="moods-list-reviews">
+              <span class="md:mr-1">dark</span> <span class='percentage'>75%</span><br>
+              <span class="md:mr-1">reflective</span> <span class='percentage'>50%</span><br>
+              <span class="md:mr-1">emotional</span> <span class='percentage'>37%</span><br>
+              <span class="md:mr-1">sad</span> <span class='percentage'>37%</span><br>
+              <span class="md:mr-1">adventurous</span> <span class='percentage'>25%</span><br>
+              <span class="md:mr-1">mysterious</span> <span class='percentage'>25%</span><br>
+              <span class="md:mr-1">tense</span> <span class='percentage'>12%</span><br>
+          </div>
+      </div>
+      <div class="col-span-1">
+          <p class="review-question mt-4 font-semibold">Pace</p>
+          <div class="paces-reviews">
+              <span class="md:mr-1">fast</span> <span class='percentage'>50%</span><br>
+              <span class="md:mr-1">slow</span> <span class='percentage'>25%</span><br>
+              <span class="md:mr-1">medium</span> <span class='percentage'>25%</span><br>
+          </div>
+      </div>
+    </div>
+
+        <div>
+            <p class="review-character-question font-semibold mt-4">Plot- or character-driven?</p>
+            <span class="review-response-summary">Character: 57% | Plot: 28% | A mix: 14% </span>
+
+            <p class="review-character-question font-semibold mt-4">Strong character development?</p>
+            <span class="review-response-summary">It&#39;s complicated: 57% | No: 28% | Yes: 14% </span>
+
+            <p class="review-character-question font-semibold mt-4">Loveable characters?</p>
+            <span class="review-response-summary">No: 57% | Yes: 28% | It&#39;s complicated: 14% </span>
+
+            <p class="review-character-question font-semibold mt-4">Diverse cast of characters?</p>
+            <span class="review-response-summary">Yes: 57% | No: 42% </span>
+
+            <p class="review-character-question font-semibold mt-4">Flaws of characters a main focus?</p>
+            <span class="review-response-summary">Yes: 71% | No: 14% | It&#39;s complicated: 14% </span>
+        </div>
+
+        <p class="review-question font-semibold mt-4">Average rating</p>
+        <span class="average-star-rating">4.32 <svg class="icon-star w-6 inline-flex relative right-2 pb-1" viewbox="0 0 23 23">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" class="fill-current text-transparent"/><path class="fill-current text-yellow-300" d="M9.53 16.93a1 1 0 0 1-1.45-1.05l.47-2.76-2-1.95a1 1 0 0 1 .55-1.7l2.77-.4 1.23-2.51a1 1 0 0 1 1.8 0l1.23 2.5 2.77.4a1 1 0 0 1 .55 1.71l-2 1.95.47 2.76a1 1 0 0 1-1.45 1.05L12 15.63l-2.47 1.3z"/></svg>
+          </svg>
+        </span>
+
+      <p class="mt-4"><a class="standard-link font-medium uppercase border-b" href="/book_reviews/a477e024-e187-4407-ac9e-38d8c3579ea9">See all reviews...</a></p>
+  </div>
+
+  <div class="w-full absolute right-0 left-0 h-[1px] bg-darkGrey dark:bg-darkerGrey"></div>
+
+  <div class="mb-6 md:mb-0 mt-6 px-2 md:px-unset md:standard-pane inline-block md:block book-pane break-words">
+  <h3 class="section-heading uppercase mb-2">Content Warnings</h3>
+    <p class="italic mb-4">Submitted by users as part of their reviews</p>
+    <div class="content-warning-information">
+      <div class="toggle-content-warnings-information-book cursor-pointer dark:hidden">
+        <svg class="icon chevron-right content-warnings w-6 -ml-2 inline" viewbox="0 0 20 20" role="button"><title>Expand filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-cheveron-right"><path class="secondary" d="M10.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/></svg>
+        </svg>
+        <svg class="hidden inline icon chevron-down content-warnings -ml-2  w-6" viewbox="0 0 20 20" role="button"><title>Collapse filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-cheveron-down"><path class="secondary" fill-rule="evenodd" d="M15.3 10.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+        </svg>
+        <span class="cursor-pointer mb-4">View summary</span>
+      </div>
+      <div class="toggle-content-warnings-information-book cursor-pointer hidden dark:inline">
+        <svg class="icon chevron-right content-warnings w-6 -ml-2 inline" stroke="#f5f5f5" viewbox="0 0 20 20" role="button"><title>Expand filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#f5f5f5" fill="#f5f5f5" class="icon-cheveron-right"><path class="secondary" d="M10.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/></svg>
+        </svg>
+        <svg class="hidden inline icon chevron-down content-warnings -ml-2  w-6" stroke="#f5f5f5" viewbox="0 0 20 20" role="button"><title>Collapse filter menu</title>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="#f5f5f5" fill="#f5f5f5" class="icon-cheveron-down"><path class="secondary" fill-rule="evenodd" d="M15.3 10.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+        </svg>
+        <span class="cursor-pointer mb-4">View summary</span>
+      </div>
+      <div class="hidden content-warnings-information mt-4">
+          <p class="mt-4"><b>Minor</b></p>
+          Child abuse, Child death, Injury/Injury detail
+        <br/><br/>
+      </div>
+    </div>
+    <p class="mt-4"><a class="standard-link font-medium uppercase border-b" href="/books/a477e024-e187-4407-ac9e-38d8c3579ea9/content_warnings">See all...</a></p>
+</div>
+
+</div>
+
+<button onclick="scrollToTopFunction()" class="fixed bottom-8 md:bottom-7 right-1 md:right-2 z-100 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-darkestGrey focus:ring-cyan-600 dark:focus:ring-cyan-400" id="btn-scroll-to-top" title="Scroll to top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="button" class="icon-cheveron-up-circle h-7 w-7"><circle cx="12" cy="12" r="10" class="fill-current text-cyan-600 dark:text-cyan-400"/><path class="fill-current text-white dark:text-darkestGrey" d="M8.7 13.7a1 1 0 1 1-1.4-1.4l4-4a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1-1.4 1.4L12 10.42l-3.3 3.3z"/></svg></button>
+
+
+  <script>
+    var loadingHtml = `<div class="col-span-2 text-center">${document.getElementById("hidden-spinner").innerHTML}</div>`;
+
+    function updateTabStyles(link, isActive) {
+      if (isActive) {
+        link.classList.remove("cursor-pointer", "pointer-events-auto", "border-transparent", "font-light", "text-sm");
+        link.classList.add("cursor-default", "pointer-events-none", "border-darkerGrey", "dark:border-lightGrey", "font-medium");
+      } else {
+        link.classList.remove("cursor-default", "pointer-events-none", "border-darkerGrey", "dark:border-lightGrey", "font-medium");
+        link.classList.add("cursor-pointer", "pointer-events-auto", "border-transparent", "font-light", "text-sm");
+      }
+    }
+
+    document.addEventListener("turbo:load", () => {
+      var turboFrame = document.getElementById("hidden-personalized-preview");
+
+      document.querySelectorAll("[data-personalized]").forEach(link => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          var bookId = e.target.getAttribute("data-book-id");
+          var personalized = e.target.getAttribute("data-personalized") === 'true';
+
+          document.getElementById(`personalized-preview-desktop-${bookId}`).innerHTML = loadingHtml;
+          document.getElementById(`personalized-preview-mobile-${bookId}`).innerHTML = loadingHtml;
+
+          var newSrc = `/personalized-preview.turbo_stream?book_id=a477e024-e187-4407-ac9e-38d8c3579ea9&personalized=false`.replace('false', personalized);
+          turboFrame.setAttribute("src", newSrc);
+
+          document.querySelectorAll(`[data-personalized='${personalized}']`).forEach(el => {
+            updateTabStyles(el, true);
+          });
+          document.querySelectorAll(`[data-personalized='${!personalized}']`).forEach(el => {
+            updateTabStyles(el, false);
+          });
+        });
+      });
+    });
+  </script>
+
+
+            <div id="cookies-popup" style="z-index:2147483002;" class="hidden fixed border-2 bg-white dark:bg-darkestGrey border-darkGrey dark:border-darkerGrey bottom-0 left-0 rounded-md mx-2 pt-2 pb-4 pl-4 pr-2 shadow-2xl text-sm max-w-full md:w-13 m-2">
+              <svg id="close-cookies-popup" role="button" class="icon icon-baseline w-5 cursor-pointer float-right" viewbox="0 0 23 23"><title>Accept and close</title>
+                <svg width="24" height="24">
+                  <path class="text-cyan-700 dark:text-cyan-500 fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M9.59584 8.74731C9.36152 8.51299 8.98162 8.51299 8.74731 8.74731C8.51299 8.98162 8.51299 9.36152 8.74731 9.59584L11.1515 12L8.74731 14.4042C8.51299 14.6385 8.51299 15.0184 8.74731 15.2527C8.98162 15.487 9.36152 15.487 9.59584 15.2527L12 12.8485L14.4042 15.2527C14.6385 15.487 15.0184 15.487 15.2527 15.2527C15.487 15.0184 15.487 14.6385 15.2527 14.4042L12.8485 12L15.2527 9.59584C15.487 9.36152 15.487 8.98162 15.2527 8.74731C15.0184 8.51299 14.6385 8.51299 14.4042 8.74731L12 11.1515L9.59584 8.74731Z"/>
+                  <path class="text-cyan-700 dark:text-cyan-500 fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M3.4 12C3.4 7.25035 7.25035 3.4 12 3.4C16.7497 3.4 20.6 7.25035 20.6 12C20.6 16.7497 16.7497 20.6 12 20.6C7.25035 20.6 3.4 16.7497 3.4 12ZM12 4.6C7.91309 4.6 4.6 7.91309 4.6 12C4.6 16.0869 7.91309 19.4 12 19.4C16.0869 19.4 19.4 16.0869 19.4 12C19.4 7.91309 16.0869 4.6 12 4.6Z"/>
+                </svg>
+              </svg>
+              <div class="clear-right pr-6">
+                <p>By using The StoryGraph, you agree to our <a class="font-semibold text-cyan-700 dark:text-cyan-500 hover:text-darkestGrey dark:text-grey cookies-find-out-more-btn" href="/cookies">use of cookies</a>.<br />We use a small number of cookies to provide you with a great experience.</p>
+                <p class="mt-2"><a class="font-semibold text-cyan-700 dark:text-cyan-500 hover:text-darkestGrey dark:text-grey cookies-find-out-more-btn border-b" href="/cookies">Find out more</a></p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <script>
+  window.fwSettings={
+      'widget_id':79000000885
+    };
+  !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
+</script>
+<script type='text/javascript' src='https://euc-widget.freshworks.com/widgets/79000000885.js' async defer></script>
+
+  </body>
+</html>
