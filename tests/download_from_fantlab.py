@@ -1,6 +1,5 @@
 import unittest
 from pprint import pprint
-from pickle import dump, load
 
 from bibliosites import fantlab
 from db.author_class import Author 
