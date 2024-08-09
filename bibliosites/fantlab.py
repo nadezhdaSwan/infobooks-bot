@@ -4,12 +4,12 @@ from pprint import pprint
 
 link = 'https://api.fantlab.ru'
 
-def get_info_about_edition_from_isnb(isnb):
+def get_info_about_edition_from_isnb(isnb, parse_json = 1):
 	editions_id = get_edition_id(isnb)
-	return [get_info_from_edition_id(edition_id) for edition_id in editions_id]
+	return [get_info_from_edition_id(edition_id, parse_json) for edition_id in editions_id]
 
-def get_info_from_edition_id(edition_id):
-	return get_info_from_fantlab(f'edition/{edition_id}')	
+def get_info_from_edition_id(edition_id, parse_json = 1):
+	return get_info_from_fantlab(f'edition/{edition_id}', parse_json)	
 
 def get_edition_id(isnb):
 	query = isnb
@@ -17,12 +17,12 @@ def get_edition_id(isnb):
 		get_info_from_fantlab(f'search-editions?q={query}&page=1&onlymatches=1')]
 	return sorted(editions_id)
 
-def get_info_about_work_from_name(work_name):
+def get_info_about_work_from_name(work_name, parse_json = 1):
 	works_id = get_work_id(work_name)
-	return [get_info_from_work_id(work_id) for work_id in works_id]
+	return [get_info_from_work_id(work_id, parse_json) for work_id in works_id]
 
-def get_info_from_work_id(work_id):
-	return get_info_from_fantlab(f'work/{work_id}')
+def get_info_from_work_id(work_id, parse_json = 1):
+	return get_info_from_fantlab(f'work/{work_id}', parse_json)
 
 def get_work_id(work_name):
 	query = work_name
@@ -31,12 +31,12 @@ def get_work_id(work_name):
 	return sorted(works_id)
 
 
-def get_info_about_author_from_name(author_name):
+def get_info_about_author_from_name(author_name, parse_json = 1):
 	authors_id = get_authors_id(author_name)
-	return [get_info_about_author_from_id(author_id) for author_id in authors_id]
+	return [get_info_about_author_from_id(author_id, parse_json) for author_id in authors_id]
 
-def get_info_about_author_from_id(author_id):
-	return get_info_from_fantlab(f'autor/{author_id}')
+def get_info_about_author_from_id(author_id, parse_json = 1):
+	return get_info_from_fantlab(f'autor/{author_id}', parse_json)
 
 def get_authors_id(author_name):
 	query = author_name
@@ -45,7 +45,7 @@ def get_authors_id(author_name):
 		get_info_from_fantlab(f'search-autors?q={query}&page=1&onlymatches=1')]
 	return sorted(authors_id)
 
-def get_info_from_fantlab(request_text):
+def get_info_from_fantlab(request_text,parse_json = 1):
 	# Making a GET request 
 	#print(f'{link}/{request_text}')
 	responce = requests.get(f'{link}/{request_text}') 
@@ -55,7 +55,10 @@ def get_info_from_fantlab(request_text):
 	# success code - 200 
 	if responce.status_code == 200:
 	# return content of request 
-		return json.loads(responce.content.decode('utf-8'))
+		if parse_json==1:
+			return json.loads(responce.content.decode('utf-8'))
+		else:
+			return responce.content.decode('utf-8')
 	else:
 		return -1
 

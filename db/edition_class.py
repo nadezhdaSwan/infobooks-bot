@@ -1,6 +1,8 @@
 from dataclasses import dataclass
-from datetime import date
-from typing import TypedDict, Tuple
+from datetime import date, datetime
+from typing import TypedDict, Tuple, Optional
+
+#from redis_om import HashModel
 
 @dataclass(kw_only=True)
 class Edition:
@@ -8,7 +10,7 @@ class Edition:
 	edition_name: str					# название издания
 	edition_type: str					# тип издания
 	edition_type_plus: Tuple[str]		# доп. типы издания
-	edition_work_id: int				# id произведения, где содержание такое же как в издании (журнал/сборник/антология)
+	edition_work_id: int|None    		# id произведения, где содержание такое же как в издании (журнал/сборник/антология)
 	copies: int = 0						# тираж (0, если неизвестен)
 	correct_level: float				# степень проверенности издания (0 - не проверено, 0.5 - не полностью проверено, 1 - проверено)
 	cover_type: str						# тип обложки
@@ -19,21 +21,21 @@ class Edition:
 				'is_opened': bool,			# открыта ли страница автора
 				'name': str,				# имя автора
 				'type': str					# тип (autor - автор, art - художник)
-			})
+			}), ...
 		],
 		'compilers': Tuple[				# список составителей (если сборник/антология)
 			TypedDict('compiler', {
 				'id': int,					# id составителя
 				'name': str,				# имя составителя (может быть "не указан")
 				'type': str					# тип (compiler)
-			})
-		],
+			}), ...
+		] | None,
 		'publishers': Tuple[			# список издателей
 			TypedDict('publisher', {
 				'id': int,					# id издателя
 				'name': str,				# название издателя
 				'type': str					# тип (publisher)
-			})
+			}), ...
 		]
 	})
 	description: str					# описание
@@ -58,9 +60,9 @@ class Edition:
 		})
 	]
 	year: int							# год издания
-	content: Tuple[str]					# [content] содержание
+	content: Tuple[str]	| None				# [content] содержание
 	images_plus: None
-	last_modified: date
+	last_modified: datetime
 	type: int
 	volume: None
 

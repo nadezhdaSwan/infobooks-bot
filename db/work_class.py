@@ -1,12 +1,14 @@
 from dataclasses import dataclass
-from datetime import date
-from typing import TypedDict, Tuple
+from datetime import date, datetime
+from typing import TypedDict, Tuple, Optional
+
+from redis_om import HashModel
 
 @dataclass(kw_only=True)
 class Work:
     work_id: int                        # id произведения
-    last_modified: date                 # время последнего изменения данных
-    last_modified_iso: date             # время последнего изменения данных в ISO 8601
+    last_modified: datetime                 # время последнего изменения данных
+    last_modified_iso: date | None            # время последнего изменения данных в ISO 8601
     work_name: str                      # название произведения
     work_name_orig: str                 # оригинальное название (анг или родной)
     work_name_alts: Tuple[str]          # массив альтернативных названий произведения
@@ -30,11 +32,11 @@ class Work:
     title: str                          # автор(ы)+название в формате "Дэн Симмонс «Гиперион»"
     image: str                          # ссылка на картинку произведения (обложку по умолчанию)
     image_preview: str                  # ссылка на превью картинки произведения
-    publish_statuses: Tuple[str]        # для неопубликованных о статусе проивзедения ("не закончено", "в планах", ...)
+    publish_statuses: Tuple[str] | Tuple[()]       # для неопубликованных о статусе проивзедения ("не закончено", "в планах", ...)
     work_published: int                 # вышло ли произведени (0 - не опубликовано, 1 - опубликовано)
     work_preparing: int                 # запланированное произведени (1 - "в планах автора")
     work_notfinished: int               # не законченое произведение (1 - "не окончено")
-    work_lp: int                        # доступен линговоанаолиз произведения (0 - "нет" / 1 - "есть")
+    work_lp: int | None                       # доступен линговоанаолиз произведения (0 - "нет" / 1 - "есть")
     public_download_file: int           # есть файл для скачивания/чтения (1 - "доступно для свободного чтения")
     rating: TypedDict('rating', {
         'rating': float,                    # рейтинг (до сотых, пр.: "8.91")
@@ -47,7 +49,7 @@ class Work:
     work_type_id: int                   # id типа произведения 
     work_type: str                      # тип провездения (роман, повесть, рассказ & etc)
     work_type_name: str                 # тип произведения на английском
-    work_parent: int                    # >0 для неактивных частей - если является частью другого произведение, то тут его id
+    work_parent: int | None                  # >0 для неактивных частей - если является частью другого произведение, то тут его id
     work_root_saga: Tuple[              # название циклов, куда водит данное произвдеение
         TypedDict('saga', {
             'work_id': int,                   # id цикла (ворка)
@@ -56,8 +58,8 @@ class Work:
             'work_type_id': int,              # id типа произведния
             'work_year': int                  # год публикации
         })
-    ]
-    work_saga: Tuple[str]
+    ] | None
+    work_saga: Tuple[str] | None
     work_type_icon: str
 
     def __str__(self):
