@@ -1,10 +1,7 @@
 /start - common menu with all all commands
-/find_book - find book by name + author name
-/find_book_isnb - find book from isnb
 
-Later enter name or isnb -> get all information from
-/livelib
-/goodreads
-/fantlab
-/googlebooks
-/storygraph
+/search_edition_isnb - search edition of book by isnb
+
+/search_work_name - search work by name
+
+/search_author_name - search author by name
