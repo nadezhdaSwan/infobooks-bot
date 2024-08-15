@@ -9,6 +9,8 @@ from db.edition_class import Edition
 import redis
 import json
 
+from create_bot import cache
+
 class DowloadAuthorInfo(unittest.TestCase):
 	"""тестирование загрузки информации об авторе"""
 	@unittest.skip('Не загружать лишний раз сервер fantlab')
@@ -19,7 +21,7 @@ class DowloadAuthorInfo(unittest.TestCase):
 		self.assertEqual(fantlab.get_info_about_author_from_name('Станислав Лем')[0]['name'],
 			'Станислав Лем')
 
-
+	@unittest.skip('Проверяется в test_cache')
 	def test_recognise_json(self):
 		'''тест загрузки json в класс данных Author'''
 		try:
@@ -32,10 +34,10 @@ class DowloadAuthorInfo(unittest.TestCase):
 				file.write(author_json)
 			author_turple = json.loads(author_json)
 		author = Author(**author_turple)
-		print(author)
+		#print(author)
 		self.assertEqual(author.name, 'Станислав Лем')
 
-	#@unittest.skip('')
+	@unittest.skip('Проверяется в test_cache')
 	def test_save_json_to_redis(self):
 		'''тест загрузки autor_json в redis'''
 		with open('tests/author.json','r') as file:
@@ -43,6 +45,15 @@ class DowloadAuthorInfo(unittest.TestCase):
 		r = redis.Redis(host='localhost', port=6379, db=0)
 		r.set('author',author_json,ex=120)
 		self.assertEqual(r.get('author').decode('utf-8'),	author_json)
+
+	def test_cache(self):
+		'''тест кэша в redis'''
+		request_text = 'Станислав Лем'
+		cache.save(request_text,fantlab.get_info_about_author_from_name(request_text,parse_json=0)[0], ex=100)
+		author = Author(**cache.load(request_text))
+		#print(author)
+		self.assertEqual(author.name, request_text)
+		self.assertTrue(cache.is_cached(request_text)>=1)
 
 
 
@@ -56,6 +67,7 @@ class DowloadWorkInfo(unittest.TestCase):
 		self.assertEqual(fantlab.get_info_about_work_from_name('Властелин колец')[0]['work_name'], 
 			'Властелин Колец')
 
+	@unittest.skip('Проверяется в test_cache')
 	def test_recognise_json(self):
 		'''тест загрузки json в класс данных Work'''
 		try:
@@ -68,9 +80,10 @@ class DowloadWorkInfo(unittest.TestCase):
 				file.write(work_json)
 			work_turple = json.loads(work_json)
 		work = Work(**work_turple)
-		print(work)
+		#print(work)
 		self.assertEqual(work.work_name, 'Солярис')
 
+	@unittest.skip('Проверяется в test_cache')
 	def test_save_json_to_redis(self):
 		'''тест загрузки work_json в redis'''
 		with open('tests/work.json','r') as file:
@@ -78,6 +91,15 @@ class DowloadWorkInfo(unittest.TestCase):
 		r = redis.Redis(host='localhost', port=6379, db=0)
 		r.set('work',work_json,ex=120)
 		self.assertEqual(r.get('work').decode('utf-8'),	work_json)
+
+	def test_cache(self):
+		'''тест кэша в redis'''
+		request_text = 'Солярис'
+		cache.save(request_text,fantlab.get_info_about_work_from_name(request_text,parse_json=0)[0], ex=100)
+		work = Work(**cache.load(request_text))
+		#print(author)
+		self.assertEqual(work.work_name, request_text)
+		self.assertTrue(cache.is_cached(request_text)>=1)
 
 class DowloadEditionInfo(unittest.TestCase):
 	'''тестирование загрузки информации о издании'''
@@ -89,6 +111,7 @@ class DowloadEditionInfo(unittest.TestCase):
 		self.assertEqual(fantlab.get_info_about_edition_from_isnb('978-5-699-39937-6')[0]['edition_name'],
 			'Имя ветра')
 
+	@unittest.skip('Проверяется в test_cache')
 	def test_recognise_edition_json(self):
 		'''тест загрузки json в класс данных Edition'''
 		try:
@@ -101,9 +124,10 @@ class DowloadEditionInfo(unittest.TestCase):
 				file.write(edition_json)
 			edition_turple = json.loads(edition_json)
 		edition = Edition(**edition_turple)
-		print(edition)
+		#print(edition)
 		self.assertEqual(edition.edition_name, 'Имя ветра')
 
+	@unittest.skip('Проверяется в test_cache')
 	def test_save_json_to_redis(self):
 		'''тест загрузки edition_json в redis'''
 		with open('tests/edition.json','r') as file:
@@ -111,6 +135,15 @@ class DowloadEditionInfo(unittest.TestCase):
 		r = redis.Redis(host='localhost', port=6379, db=0)
 		r.set('edition',edition_json,ex=120)
 		self.assertEqual(r.get('edition').decode('utf-8'),	edition_json)
+
+	def test_cache(self):
+		'''тест кэша в redis'''
+		request_text = '978-5-699-39937-6'
+		cache.save(request_text,fantlab.get_info_about_edition_from_isnb(request_text,parse_json=0)[0], ex=100)
+		edition = Edition(**cache.load(request_text))
+		#print(author)
+		self.assertEqual(edition.isbns[0], request_text)
+		self.assertTrue(cache.is_cached(request_text)>=1)
 
 if __name__ == '__main__':
 	unittest.main(warnings='ignore')
