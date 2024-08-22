@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from datetime import date, datetime
-from typing import TypedDict, Tuple, Optional
+from typing import TypedDict, Tuple, Optional, Dict
 
 from redis_om import HashModel
 
@@ -61,6 +61,7 @@ class Work:
     ] | None
     work_saga: Tuple[str] | None
     work_type_icon: str
+
 
     def __str__(self):
         return f'''

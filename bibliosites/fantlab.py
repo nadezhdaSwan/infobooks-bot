@@ -4,6 +4,7 @@ from pprint import pprint
 
 link = 'https://api.fantlab.ru'
 
+
 def get_info_about_edition_from_isnb(isnb, parse_json = 1):
 	editions_id = get_edition_id(isnb)
 	return [get_info_from_edition_id(edition_id, parse_json) for edition_id in editions_id]

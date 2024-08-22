@@ -97,7 +97,7 @@ class DowloadWorkInfo(unittest.TestCase):
 		request_text = 'Солярис'
 		cache.save(request_text,fantlab.get_info_about_work_from_name(request_text,parse_json=0)[0], ex=100)
 		work = Work(**cache.load(request_text))
-		#print(author)
+		print(work)
 		self.assertEqual(work.work_name, request_text)
 		self.assertTrue(cache.is_cached(request_text)>=1)
 
