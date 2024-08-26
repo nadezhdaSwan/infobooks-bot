@@ -12,9 +12,11 @@ pydantic-settings = "^2.2.1"
 psycopg2-binary = "^2.9.9"
 requests = "^2.32.3"
 redis = "^5.0.8"
-redis-om = "^0.3.2"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start_bot = "infobooks-bot.aiogram_run:main"

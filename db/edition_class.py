@@ -2,8 +2,6 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from typing import TypedDict, Tuple, Optional
 
-#from redis_om import HashModel
-
 @dataclass(kw_only=True)
 class Edition:
 	edition_id: int						# id издания

@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
-from infobooks_bot.config_reader import config
+from config_reader import config
 #from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 from db.cache_manager_redis import CacheManager

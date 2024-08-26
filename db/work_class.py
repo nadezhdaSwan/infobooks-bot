@@ -2,8 +2,6 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from typing import TypedDict, Tuple, Optional, Dict
 
-from redis_om import HashModel
-
 @dataclass(kw_only=True)
 class Work:
     work_id: int                        # id произведения

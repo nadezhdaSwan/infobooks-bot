@@ -2,8 +2,6 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from typing import TypedDict, Tuple, Optional, NotRequired
 
-#from redis_om import HashModel
-
 @dataclass(kw_only=True)
 class Author:
     type: str                        # тип сегмента (в данном случае всегда autor)
