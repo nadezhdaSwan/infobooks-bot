@@ -6,6 +6,8 @@ from handlers.search_work_name import search_work_name_router
 from handlers.search_author_name import search_author_name_router
 # from work_time.time_func import send_time_msg
 
+from keyboards.start_kb import set_commands
+
 async def main():
     # scheduler.add_job(send_time_msg, 'interval', seconds=10)
     # scheduler.start()
@@ -15,6 +17,7 @@ async def main():
     dp.include_router(search_author_name_router)
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
+    await set_commands()
 
 if __name__ == "__main__":
     asyncio.run(main())
