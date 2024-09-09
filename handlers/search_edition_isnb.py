@@ -13,10 +13,11 @@ from handlers.common import send_info
 
 search_edition_isnb_router = Router()
 
-@search_edition_isnb_router.message(Command('search_edition_isnb'))
+@search_edition_isnb_router.message(F.text == 'search_edition_isnb')
 async def cmd_search_edition_isnb(message: Message, state: FSMContext):
     logger.info('Command search_edition_isnb')
-    await message.answer('''Enter isnb to search the edition of book:''')
+    #await message.answer('''Enter isnb to search the edition of book:''')
+    await message.answer('''Введите isnb для поиска издания книги:''')
     await state.set_state(Form.search_edition_isnb)
 
 @search_edition_isnb_router.message(Form.search_edition_isnb)

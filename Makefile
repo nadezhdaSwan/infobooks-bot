@@ -1,6 +1,9 @@
 # bot name in telegram @info_about_books_bot
-start:
+start_server:
 	poetry run python aiogram_run.py &
+
+start_pc:
+	python aiogram_run.py
 
 stop:
 	pkill -9 -f aiogram_run.py

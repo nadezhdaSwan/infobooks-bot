@@ -13,10 +13,11 @@ from handlers.common import send_info
 
 search_author_name_router = Router()
 
-@search_author_name_router.message(Command('search_author_name'))
+@search_author_name_router.message(F.text == 'search_author_name')
 async def cmd_search_author_name(message: Message, state: FSMContext):
     logger.info('Command search_author_name')
-    await message.answer('''Enter author name:''')
+    #await message.answer('''Enter author name:''')
+    await message.answer('''Введите имя автора:''')
     await state.set_state(Form.search_author_name)
 
 @search_author_name_router.message(Form.search_author_name)

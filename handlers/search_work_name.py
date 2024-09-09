@@ -8,15 +8,17 @@ from create_bot import logger
 
 from bibliosites import fantlab
 from db.work_class import Work
+from aiogram.types import CallbackQuery
 
 from handlers.common import send_info
 
 search_work_name_router = Router()
 
-@search_work_name_router.message(Command('search_work_name'))
+@search_work_name_router.message(F.text == 'search_work_name')
 async def cmd_search_work_name(message: Message, state: FSMContext):
     logger.info('Command search_work_name')
-    await message.answer('''Enter work name:''')
+    #await message.answer('''Enter work name:''')
+    await message.answer('''Введите название книги:''')
     await state.set_state(Form.search_work_name)
 
 @search_work_name_router.message(Form.search_work_name)
