@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from typing import TypedDict, Tuple, Optional, Dict
 
+from bibliosites.fantlab import get_info_about_work_from_name
+
 @dataclass(kw_only=True)
 class Work:
     work_id: int                        # id произведения
@@ -60,10 +62,14 @@ class Work:
     work_saga: Tuple[str] | None
     work_type_icon: str
 
+    name_in_json = 'work_name'
+
 
     def __str__(self):
-        return f'''
-{self.work_name}
+        return f'''{self.work_name}
 {self.work_name_orig}
 {self.work_type}, {self.work_year} год
 '''
+
+    def import_from_fantlab(self,request_text, parse_json=0):
+        return get_info_about_work_from_name(request_text, parse_json)

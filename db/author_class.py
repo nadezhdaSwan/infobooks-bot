@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from typing import TypedDict, Tuple, Optional, NotRequired
 
+from bibliosites.fantlab import get_info_about_author_from_name
+
 @dataclass(kw_only=True)
 class Author:
     type: str                        # тип сегмента (в данном случае всегда autor)
@@ -46,11 +48,16 @@ class Author:
 #        })
 #    ]] = Tuple[{}]
 
+    name_in_json = 'name'
+
     def __str__(self):
-        return f'''
-{self.name}
+        return f'''{self.name}
 {self.name_orig}
 Родился: {self.birthday}
 Умер: {self.deathday}
 Страна: {self.country_name}
+
 '''
+    
+    def import_from_fantlab(self,request_text, parse_json=0):
+        return get_info_about_author_from_name(request_text, parse_json)

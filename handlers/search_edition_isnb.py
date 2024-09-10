@@ -9,7 +9,7 @@ from create_bot import logger
 from bibliosites import fantlab
 from db.edition_class import Edition
 
-from handlers.common import send_info
+from handlers.common import send_info, pagination
 
 search_edition_isnb_router = Router()
 
@@ -25,10 +25,11 @@ async def send_info_book_isnb(message: Message, state: FSMContext):
     await state.update_data(search_edition_isnb=message.text)
     user_data = await state.get_data()
 
-    edition = send_info(user_data['search_edition_isnb'], fantlab.get_info_about_edition_from_isnb, Edition)
+    #edition = send_info(user_data['search_edition_isnb'], fantlab.get_info_about_edition_from_isnb, Edition)
+    editions = pagination(user_data['search_edition_isnb'], Edition)
 
     await message.answer(
-        text=str(edition),
+        text=str(editions),
         reply_markup=ReplyKeyboardRemove()
     )
     await state.clear()

@@ -9,7 +9,7 @@ from create_bot import logger
 from bibliosites import fantlab
 from db.author_class import Author
 
-from handlers.common import send_info
+from handlers.common import send_info, pagination
 
 search_author_name_router = Router()
 
@@ -25,10 +25,10 @@ async def send_info_book_isnb(message: Message, state: FSMContext):
     await state.update_data(search_author_name=message.text)
     user_data = await state.get_data()
 
-    author = send_info(user_data['search_author_name'], fantlab.get_info_about_author_from_name, Author)
-
+    #author = send_info(user_data['search_author_name'], fantlab.get_info_about_author_from_name, Author)
+    authors = pagination(user_data['search_author_name'], Author)
     await message.answer(
-        text=str(author),
+        text=str(authors),
         reply_markup=ReplyKeyboardRemove()
     )
     await state.clear()

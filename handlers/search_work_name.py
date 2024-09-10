@@ -10,7 +10,7 @@ from bibliosites import fantlab
 from db.work_class import Work
 from aiogram.types import CallbackQuery
 
-from handlers.common import send_info
+from handlers.common import send_info, pagination
 
 search_work_name_router = Router()
 
@@ -26,10 +26,11 @@ async def send_info_book_isnb(message: Message, state: FSMContext):
     await state.update_data(search_work_name=message.text)
     user_data = await state.get_data()
 
-    work = send_info(user_data['search_work_name'], fantlab.get_info_about_work_from_name, Work)
+    #work = send_info(user_data['search_work_name'], fantlab.get_info_about_work_from_name, Work)
+    works = pagination(user_data['search_work_name'], Work)
 
     await message.answer(
-        text=str(work),
+        text=str(works),
         reply_markup=ReplyKeyboardRemove()
     )
     await state.clear()

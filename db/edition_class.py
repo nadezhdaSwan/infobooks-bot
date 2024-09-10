@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from typing import TypedDict, Tuple, Optional
 
+from bibliosites.fantlab import get_info_about_edition_from_isnb
+
 @dataclass(kw_only=True)
 class Edition:
 	edition_id: int						# id издания
@@ -64,9 +66,13 @@ class Edition:
 	type: int
 	volume: None
 
+	name_in_json = 'edition_name'
+
 	def __str__(self):
-		return f'''
-{self.edition_name}
+		return f'''{self.edition_name}
 ISNB {', '.join(self.isbns)}
 Год издания {self.year}
 '''
+
+	def import_from_fantlab(self,request_text, parse_json=0):
+		return get_info_about_edition_from_isnb(request_text, parse_json)
