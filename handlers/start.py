@@ -1,7 +1,11 @@
+from copy import deepcopy
+
 from aiogram import Router
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
+
+from db.database import users_db, user_dict_template
 
 from keyboards.all_kb import main_kb
 
@@ -25,3 +29,5 @@ async def cmd_start(message: Message):
 Этот бот может искать информацию о книгах на сайте fantlab.ru. 
 Выберите способ поиска:
 ''', reply_markup = main_kb())
+    if message.from_user.id not in users_db:
+        users_db[message.from_user.id] = deepcopy(user_dict_template)
