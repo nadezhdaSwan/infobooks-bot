@@ -39,3 +39,8 @@ def pagination(request_text, ClassName):
     for num, name in enumerate(json_list,1):
         book_list[num] = f'{num}. {ClassName(**cache_request(name, ClassName))}'
     return book_list
+
+def send_detailed_info(request_text, ClassName, num_list):
+    json_ = list(cache_request_list(request_text, ClassName))[num_list-1]
+    return f'{ClassName(**cache_request(json_, ClassName)).detailed_info()}'
+

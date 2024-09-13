@@ -10,7 +10,7 @@ from create_bot import logger
 from bibliosites import fantlab
 from db.author_class import Author
 
-from handlers.common import send_info, pagination
+from handlers.common import send_detailed_info, pagination
 from keyboards.pagination_kb import create_pagination_keyboard
 
 search_author_name_router = Router()
@@ -35,9 +35,11 @@ async def send_info_book_isnb(message: Message, state: FSMContext):
         reply_markup=create_pagination_keyboard(
             'backward',
             f'{users_db[message.from_user.id]["page"]}/{len(book)}',
-            'forward'
+            'forward',
+            'download'     
         )
     )
+
     #await message.answer(
     #    text=str(authors),
     #    reply_markup=ReplyKeyboardRemove()
@@ -60,7 +62,8 @@ async def process_backward_press(callback: CallbackQuery, state: FSMContext):
             reply_markup=create_pagination_keyboard(
                 'backward',
                 f'{users_db[callback.from_user.id]["page"]}/{len(book)}',
-                'forward'
+                'forward',
+                'download'
             )
         )
     await callback.answer()
@@ -80,7 +83,20 @@ async def process_forward_press(callback: CallbackQuery, state: FSMContext):
             reply_markup=create_pagination_keyboard(
                 'backward',
                 f'{users_db[callback.from_user.id]["page"]}/{len(book)}',
-                'forward'
+                'forward',
+                'download'
             )
         )
     await callback.answer()
+
+# Этот хэндлер будет срабатывать на нажатие инлайн-кнопки "download"
+# выводит подробную информацию об авторе
+@search_author_name_router.callback_query(F.data == 'download', Form.search_author_name)
+async def process_forward_press(callback: CallbackQuery, state: FSMContext):
+    logger.info('Click download')
+    user_data = await state.get_data()
+    text = send_detailed_info(user_data['search_author_name'], Author, users_db[callback.from_user.id]['page'])
+    #text = book[users_db[callback.from_user.id]['page']]
+    await callback.message.answer(text)
+    await state.clear()
+    logger.info('Stop search_author_name state')

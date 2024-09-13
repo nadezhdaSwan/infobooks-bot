@@ -58,6 +58,15 @@ class Author:
 Страна: {self.country_name}
 
 '''
+    def detailed_info(self):
+        return f'''{self.name}
+{self.name_orig}
+Родился: {self.birthday}
+Умер: {self.deathday}
+Страна: {self.country_name}
+url: {self.url[6:]}
+Биография: {self.anons}
+'''
     
     def import_from_fantlab(self,request_text, parse_json=0):
         return get_info_about_author_from_name(request_text, parse_json)
