@@ -16,7 +16,7 @@ class CacheManager:
 #			file.write(content)
 	def save_list(self, id:str, content: list, name:str, ex: int = None):
 		for i in content:
-			fullname = json.loads(i)[name]
+			fullname = f'{name}{json.loads(i)[f'{name}_id']}'
 			self.redis_db.sadd(id, fullname)
 			self.redis_db.set(fullname, i, ex)
 

@@ -4,7 +4,7 @@ import json
 
 
 def cache_request_list(request_text, ClassName):
-    request_text_list_name = f'{request_text}_list'
+    request_text_list_name = f'{request_text}_request_{ClassName.name_in_json}'
     if cache.is_cached(request_text_list_name):
         logger.info(f'{request_text_list_name} in cache')
     else:
@@ -16,10 +16,10 @@ def cache_request_list(request_text, ClassName):
 def cache_request(request_text, ClassName):
     if cache.is_cached(request_text):
         logger.info(f'{request_text} in cache')
+        return cache.load(request_text)
     else:
-        logger.info(f'{request_text} load from fantlab')
-        cache.save(request_text, ClassName.import_from_fantlab(ClassName, request_text))
-    return cache.load(request_text)
+        logger.info(f'no {request_text} in cache')
+    
 
 def send_info(request_text, get_info_func, ClassName):
     if cache.is_cached(request_text):

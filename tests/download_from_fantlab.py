@@ -55,6 +55,15 @@ class DowloadAuthorInfo(unittest.TestCase):
 		self.assertEqual(author.name, request_text)
 		self.assertTrue(cache.is_cached(request_text)>=1)
 
+	def test_detailed_info(self):
+		'''тест кэша в redis'''
+		request_text = 'Станислав Лем'
+		cache.save(request_text, Author.import_from_fantlab(Author, request_text)[0], ex=100)
+		author = Author(**cache.load(request_text))
+		print(author.detailed_info())
+		#self.assertEqual(author.name, request_text)
+		#self.assertTrue(cache.is_cached(request_text)>=1)
+
 	@unittest.skip('Перенесено в функцию author_pagination')
 	def test_pagination(self):
 		'''тестируем пагинацию списка авторов'''
@@ -113,9 +122,18 @@ class DowloadWorkInfo(unittest.TestCase):
 		request_text = 'Солярис'
 		cache.save(request_text, Work.import_from_fantlab(Work, request_text)[0], ex=100)
 		work = Work(**cache.load(request_text))
-		print(work)
+		#print(work)
 		self.assertEqual(work.work_name, request_text)
 		self.assertTrue(cache.is_cached(request_text)>=1)
+
+
+	def test_detailed_info(self):
+		'''тест кэша в redis'''
+		request_text = 'Солярис'
+		cache.save(request_text, Work.import_from_fantlab(Work, request_text)[0], ex=100)
+		work = Work(**cache.load(request_text))
+		print(work.detailed_info())
+
 
 class DowloadEditionInfo(unittest.TestCase):
 	'''тестирование загрузки информации о издании'''
@@ -160,6 +178,14 @@ class DowloadEditionInfo(unittest.TestCase):
 		#print(author)
 		self.assertEqual(edition.isbns[0], request_text)
 		self.assertTrue(cache.is_cached(request_text)>=1)
+
+	def test_detailed_info(self):
+		'''тест кэша в redis'''
+		request_text = '978-5-699-39937-6'
+		cache.save(request_text, Edition.import_from_fantlab(Edition, request_text)[0], ex=100)
+		edition = Edition(**cache.load(request_text))
+		print(edition.detailed_info())
+
 
 if __name__ == '__main__':
 	unittest.main(warnings='ignore')

@@ -62,7 +62,9 @@ class Work:
     work_saga: Tuple[str] | None
     work_type_icon: str
 
-    name_in_json = 'work_name'
+
+    name_in_json = 'work'
+
 
 
     def __str__(self):
@@ -73,3 +75,12 @@ class Work:
 
     def import_from_fantlab(self,request_text, parse_json=0):
         return get_info_about_work_from_name(request_text, parse_json)
+
+    def detailed_info(self):
+        authors = ', '.join([author['name'] for author in self.authors])
+        return f'''{self.work_name} ({self.work_name_orig})
+{self.work_type}, {self.work_year} год (год написания: {self.work_year_of_write})
+Язык написания: {self.lang}
+Автор(ы): {authors}
+url: fantlab.ru/work{self.work_id}
+'''

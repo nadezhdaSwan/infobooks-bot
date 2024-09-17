@@ -47,8 +47,9 @@ class Author:
 #            'site': str                 # ссылка
 #        })
 #    ]] = Tuple[{}]
+    
+    name_in_json = 'autor'
 
-    name_in_json = 'name'
 
     def __str__(self):
         return f'''{self.name}
@@ -59,13 +60,11 @@ class Author:
 
 '''
     def detailed_info(self):
-        return f'''{self.name}
-{self.name_orig}
+        return f'''{self.name} ({self.name_orig})
 Родился: {self.birthday}
 Умер: {self.deathday}
 Страна: {self.country_name}
 url: {self.url[6:]}
-Биография: {self.anons}
 '''
     
     def import_from_fantlab(self,request_text, parse_json=0):

@@ -14,9 +14,12 @@ test:
 
 
 push:
-	scp -r -P 10090 bibliosites db handlers .env aiogram_run.py create_bot.py config_reader.py \
+	scp -r -P 10090 bibliosites db handlers keyboards lexicon .env aiogram_run.py create_bot.py config_reader.py \
 		README.md Makefile pyproject.toml olebedev@192.168.99.99:/mnt/disk/hope/code/infobooks-bot
 
+go_to_server:
+	ssh -p 10090 olebedev@192.168.99.99
+	cd /mnt/disk/hope/code/infobooks-bot
 
 #start_bot_on_server:
 #	ssh -p 10090 olebedev@192.168.99.99

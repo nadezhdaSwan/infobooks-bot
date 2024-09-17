@@ -10,7 +10,7 @@ class Edition:
 	edition_name: str					# название издания
 	edition_type: str					# тип издания
 	edition_type_plus: Tuple[str]		# доп. типы издания
-	edition_work_id: int|None    		# id произведения, где содержание такое же как в издании (журнал/сборник/антология)
+	edition_work_id: int|None			# id произведения, где содержание такое же как в издании (журнал/сборник/антология)
 	copies: int = 0						# тираж (0, если неизвестен)
 	correct_level: float				# степень проверенности издания (0 - не проверено, 0.5 - не полностью проверено, 1 - проверено)
 	cover_type: str						# тип обложки
@@ -66,12 +66,26 @@ class Edition:
 	type: int
 	volume: None
 
-	name_in_json = 'edition_name'
+	name_in_json = 'edition'
+
 
 	def __str__(self):
 		return f'''{self.edition_name}
 ISNB {', '.join(self.isbns)}
 Год издания {self.year}
+'''
+
+	def detailed_info(self):
+		edition_type_plus = ', '.join([i for i in self.edition_type_plus])
+		puplishers = ', '.join([i['name'] for i in self.creators['publishers']])
+		authors = ', '.join([i['name'] for i in self.creators['authors']])
+		return f'''{self.edition_name}
+{self.edition_type}, {edition_type_plus}
+Издание: {puplishers}, {self.year}
+Тираж: {self.copies} экз.
+Страниц: {self.pages}
+Автор(ы): {authors}
+url: fantlab.ru/edition{self.edition_id}
 '''
 
 	def import_from_fantlab(self,request_text, parse_json=0):
